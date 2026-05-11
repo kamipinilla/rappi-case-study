@@ -11,6 +11,7 @@ import {
 } from 'recharts'
 
 import type { Measurement, Zone } from '../data/MetricAnalyzer'
+import { getCompanyAccentColor } from '../utils/CompanyAccentColor'
 
 type ZoneTrendChartProps = {
   zone: Zone
@@ -64,6 +65,11 @@ export function ZoneTrendChart({
   comparisonCompanyName,
 }: ZoneTrendChartProps) {
   const chartData = mapChartData(zone)
+  const referenceCompanyAccentColor =
+    getCompanyAccentColor(referenceCompanyName)
+  const comparisonCompanyAccentColor = getCompanyAccentColor(
+    comparisonCompanyName,
+  )
 
   return (
     <section className="flex h-full min-h-[26rem] flex-col gap-4 p-4">
@@ -105,19 +111,19 @@ export function ZoneTrendChart({
             <Legend wrapperStyle={{ fontSize: 12 }} />
             <ReferenceLine
               y={zone.referenceData.value}
-              stroke="#2563eb"
+              stroke={referenceCompanyAccentColor}
               strokeDasharray="4 4"
             />
             <ReferenceLine
               y={zone.comparisonData.value}
-              stroke="#f97316"
+              stroke={comparisonCompanyAccentColor}
               strokeDasharray="4 4"
             />
             <Line
               type="monotone"
               dataKey="referenceValue"
               name={referenceCompanyName}
-              stroke="#2563eb"
+              stroke={referenceCompanyAccentColor}
               strokeWidth={2}
               dot={{ r: 3 }}
               activeDot={{ r: 5 }}
@@ -126,7 +132,7 @@ export function ZoneTrendChart({
               type="monotone"
               dataKey="comparisonValue"
               name={comparisonCompanyName}
-              stroke="#f97316"
+              stroke={comparisonCompanyAccentColor}
               strokeWidth={2}
               dot={{ r: 3 }}
               activeDot={{ r: 5 }}

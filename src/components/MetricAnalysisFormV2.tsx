@@ -2,6 +2,10 @@ import type { CSSProperties, ReactNode } from 'react'
 
 import type { Company } from '../data/CompanyRepo'
 import type { Metric } from '../data/MetricRepo'
+import {
+  DEFAULT_ACCENT_COLOR,
+  getCompanyAccentColor,
+} from '../utils/CompanyAccentColor'
 
 type MetricAnalysisFormV2Props = {
   companies: Company[]
@@ -26,13 +30,6 @@ type InlineSelectProps = {
   onChange: (value: string) => void
 }
 
-const DEFAULT_ACCENT_COLOR = '#94a3b8'
-const COMPANY_ACCENT_COLORS = {
-  didi: '#ffbe00',
-  rappi: '#ff441f',
-  uber: '#06c167',
-} as const
-
 const metricDisplayNames: Record<string, string> = {
   'Avg Delivery Time (mins)': 'tiempo de entrega',
   'Customer Satisfaction Score': 'puntaje de satisfacción',
@@ -44,24 +41,6 @@ const metricDisplayNames: Record<string, string> = {
 
 function getMetricDisplayName(metric: Metric): string {
   return metricDisplayNames[metric.name] ?? metric.name
-}
-
-function getCompanyAccentColor(companyName: string): string {
-  const normalizedCompanyName = companyName.toLowerCase()
-
-  if (normalizedCompanyName.includes('uber')) {
-    return COMPANY_ACCENT_COLORS.uber
-  }
-
-  if (normalizedCompanyName.includes('didi')) {
-    return COMPANY_ACCENT_COLORS.didi
-  }
-
-  if (normalizedCompanyName.includes('rappi')) {
-    return COMPANY_ACCENT_COLORS.rappi
-  }
-
-  return DEFAULT_ACCENT_COLOR
 }
 
 function InlineSelect({
