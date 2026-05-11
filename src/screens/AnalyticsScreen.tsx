@@ -12,7 +12,7 @@ type AnalyticsScreenProps = {
   dataService?: DataService
 }
 
-const DEFAULT_REFERENCE_COMPANY_NAME = 'DiDi Food'
+const DEFAULT_REFERENCE_COMPANY_NAME = 'Rappi'
 const DEFAULT_COMPARISON_COMPANY_NAME = 'Uber Eats'
 const DEFAULT_METRIC_NAME = 'Avg Delivery Time (mins)'
 
