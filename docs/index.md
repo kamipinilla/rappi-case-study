@@ -1,3 +1,11 @@
+# Introducción
+
+La aplicación principal del caso de estudio, que contiene el dashboard interactivo, se encuentra disponible en [rappi-case-study.com](https://www.rappi-case-study.com).
+
+La base de datos de la aplicación fue poblada con la información del archivo [COMPETITORS_DATA](https://docs.google.com/spreadsheets/d/1-FolE32bidoXzmmW977H-hE3mfbnB72ZbOgfv_VT7zw/edit?usp=drive_link). Para completar el análisis comparativo, se agregaron valores simulados en las métricas faltantes de Rappi.
+
+A continuación se presentan los hallazgos más relevantes para el caso de estudio y, con base en ellos, se propone una estrategia de **meal prep** para mejorar la competitividad de Rappi.
+
 # Hallazgos en los datos
 
 Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competitiva.
