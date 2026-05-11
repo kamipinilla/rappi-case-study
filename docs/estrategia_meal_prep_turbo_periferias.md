@@ -31,18 +31,16 @@ El objetivo central es reducir el tiempo de espera en zonas periféricas mediant
 
 Así, Turbo Meal Prep no debe operar como un marketplace amplio de restaurantes, sino como un menú curado de alta rotación, diseñado para reducir fricción, acelerar preparación y mejorar la confiabilidad de la promesa de entrega.
 
-## 3. Datos concretos de desventaja frente a Uber Eats
+## 3. Ejemplos concretos de desventaja frente a la competencia
 
-La UI de análisis, con datos ya cargados en la base, muestra una brecha concreta en **Avg Delivery Time (mins)** para zonas relevantes de Ciudad de México. En estas zonas, **Uber Eats tiene ventaja sobre Rappi** porque registra tiempos promedio de entrega más bajos.
+Los datos muestran una brecha concreta en **Avg Delivery Time (mins)** para zonas relevantes de Ciudad de México. En estas zonas, **Uber Eats tiene ventaja sobre Rappi** porque registra tiempos promedio de entrega más bajos.
 
-La columna de diferencia de la UI está calculada como **Uber Eats - Rappi**. Por eso aparece con signo negativo: el número indica cuántos minutos menos tarda Uber Eats frente a Rappi.
+| Zona | Uber Eats (mins) | Rappi (mins) | Diferencia Uber Eats - Rappi (mins) | Ventaja porcentual |
+|---|---:|---:|---:|---:|
+| Santa Fe | 30.22 | 37.78 | -7.56 | 20% |
+| Lomas de Chapultepec | 27.73 | 33.41 | -5.68 | 17% |
 
-| Zona | Uber Eats (mins) | Rappi (mins) | Diferencia UI: Uber Eats - Rappi (mins) | Ventaja de Uber Eats (mins) | Ventaja porcentual |
-|---|---:|---:|---:|---:|---:|
-| Santa Fe | 30.22 | 36.41 | -6.19 | 6.19 | 17% |
-| Lomas de Chapultepec | 27.73 | 30.47 | -2.74 | 2.74 | 9% |
-
-Estos datos refuerzan la necesidad de una estrategia de meal prep en Turbo: en **Santa Fe**, Rappi debe cerrar una desventaja de **6.19 minutos** frente a Uber Eats; en **Lomas de Chapultepec**, la desventaja es de **2.74 minutos**. Los porcentajes corresponden a la brecha relativa registrada en la base, mientras que los valores promedio y la diferencia en minutos fueron tomados desde la UI.
+Estos datos refuerzan la necesidad de una estrategia de meal prep en Turbo: en **Santa Fe**, Rappi debe cerrar una desventaja de **7.56 minutos** frente a Uber Eats; en **Lomas de Chapultepec**, la desventaja es de **5.68 minutos**. Los porcentajes corresponden a la brecha relativa.
 
 ## 4. Enfoque específico para zonas periféricas
 
