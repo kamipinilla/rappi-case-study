@@ -29,7 +29,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## Zonas donde DiDi Food tiene mayor puntaje de satisfacción que Rappi
 
-| Zona | Diferencia | DiDi Food (puntuación) | Rappi (puntuación) |
+| Zona | Diferencia | DiDi Food (puntaje) | Rappi (puntaje) |
 |---|---:|---:|---:|
 | Del Valle | +1.2 | 4.54 | 3.35 |
 | Condesa | +1.09 | 4.3 | 3.21 |
