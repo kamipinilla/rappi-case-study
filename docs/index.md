@@ -27,7 +27,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 | Polanco | -2.89 | 15.42 | 18.31 |
 | Roma Norte | -2.72 | 11.85 | 14.57 |
 
-## Zonas donde DiDi Food tiene mayor satisfacción del cliente que Rappi
+## Zonas donde DiDi Food tiene mayor puntaje de satisfacción que Rappi
 
 | Zona | Diferencia | DiDi Food (puntuación) | Rappi (puntuación) |
 |---|---:|---:|---:|
@@ -41,7 +41,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 # Estrategia de Meal Prep en Turbo
 
-**Objetivo:** lanzar y escalar una propuesta de meal prep en Turbo que reduzca el tiempo de entrega, reduzca el precio total pagado por el cliente y aumente la satisfacción del cliente.
+**Objetivo:** lanzar y escalar una propuesta de meal prep en Turbo que reduzca el tiempo de entrega, reduzca el precio total pagado por el cliente y aumente el puntaje de satisfacción.
 
 **Propuesta base:** lanzar meal prep en Turbo con dos carriles: **eat now**, platos calientes para consumo inmediato, y **eat later**, comidas refrigeradas para 24 a 48 horas. La operación inicial debe apoyarse en restaurantes aliados cercanos, pocos SKUs, un submenú Turbo curado, finishing mínimo, control térmico y packaging estándar. La propuesta debe resolver necesidades concretas como almuerzo alto en proteína, almuerzo vegetariano balanceado, cena ligera o comida para mañana, apoyándose en Pro/Pro Black para incentivar recurrencia. Tras validar adopción sostenida y margen, podrían explorarse cocinas propias o compartidas, vida útil superior a 48 horas y packs para varios días.
 
@@ -419,7 +419,7 @@ La plataforma debe pedir mejores precios a cambio de algo concreto: demanda pred
 
 ---
 
-## 8. Estrategia de satisfacción del cliente
+## 8. Estrategia de puntaje de satisfacción
 
 La satisfacción no debe depender de que el plato sea “rico” solamente. En meal prep, el cliente evalúa cuatro cosas:
 

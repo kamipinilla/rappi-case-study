@@ -27,7 +27,7 @@ type InlineSelectProps = {
 
 const metricDisplayNames: Record<string, string> = {
   'Avg Delivery Time (mins)': 'tiempo de entrega',
-  'Customer Satisfaction Score': 'satisfacción del cliente',
+  'Customer Satisfaction Score': 'puntaje de satisfacción',
   'Delivery Fee (MXN)': 'tarifa de envío',
   'Restaurants SST > SS CVR': 'conversión en restaurantes',
   'Retail SST > SS CVR': 'conversión en retail',
