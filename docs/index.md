@@ -867,7 +867,7 @@ En esta fase sí tiene sentido evaluar cocinas propias, cocinas compartidas, vid
 
 La estrategia completa debe ser:
 
-> **Lanzar meal prep en Turbo como una categoría de comida preparada, rápida y recurrente, con dos carriles: eat now para zonas densas donde la velocidad es real, y eat later para planificación, packs y zonas donde la entrega inmediata no es económicamente viable.**
+> **Lanzar meal prep en Turbo como una categoría de comida preparada, rápida y recurrente, con dos carriles: eat now para microzonas donde Rappi pueda cumplir velocidad y confiabilidad; y eat later para zonas donde la planificación genere más valor que la inmediatez, apoyándose en packs, entregas programadas y eficiencia logística.**
 
 La primera ola debe enfocarse en **zonas céntricas**, con dos versiones:
 
