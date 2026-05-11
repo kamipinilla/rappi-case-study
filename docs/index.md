@@ -4,7 +4,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## Uber Eats tiene menor tiempo de entrega
 
-| Zona | Diferencia | Uber Eats | Rappi | Ventaja |
+| Zona | Diferencia | Uber Eats (min) | Rappi (min) | Ventaja |
 |---|---:|---:|---:|---:|
 | Del Valle | -9.46 | 32.86 | 42.32 | 22.35% |
 | Lomas de Chapultepec | -5.25 | 27.73 | 32.97 | 15.91% |
@@ -12,7 +12,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## DiDi Food tiene menor tarifa de envío
 
-| Zona | Diferencia | DiDi Food | Rappi | Ventaja |
+| Zona | Diferencia | DiDi Food (MXN) | Rappi (MXN) | Ventaja |
 |---|---:|---:|---:|---:|
 | Condesa | -3.11 | 8.91 | 12.01 | 25.86% |
 | Del Valle | -2.92 | 8.36 | 11.27 | 25.86% |
@@ -21,7 +21,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## DiDi Food tiene mayor satisfacción del cliente
 
-| Zona | Diferencia | DiDi Food | Rappi | Ventaja |
+| Zona | Diferencia | DiDi Food (puntuación) | Rappi (puntuación) | Ventaja |
 |---|---:|---:|---:|---:|
 | Del Valle | +1.2 | 4.54 | 3.35 | 35.77% |
 | Condesa | +1.09 | 4.3 | 3.21 | 34.02% |
