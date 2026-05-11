@@ -1,4 +1,4 @@
-# Estrategia completa de Meal Prep en Turbo
+# Estrategia de Meal Prep en Turbo
 
 **Objetivo:** lanzar y escalar una propuesta de meal prep en Turbo que reduzca el tiempo de entrega, reduzca el precio total pagado por el cliente y aumente la satisfacción del cliente.
 
@@ -40,7 +40,6 @@ La categoría debe escalar solo si consigue simultáneamente:
 La propuesta debe comunicar tres beneficios en el primer nivel de la interfaz:
 
 - **Llega rápido:** porque el plato ya está parcialmente preparado.
-- **Pagas menos:** porque hay menos complejidad, menos tiempo de cocina y mejor logística.
 - **Sabes qué recibes:** porque son SKUs estandarizados, con porción, foto, macros y empaque consistente.
 
 ### 2.2 Qué problema resuelve
@@ -866,12 +865,3 @@ El éxito no dependerá de tener más platos, sino de cumplir tres condiciones s
 La categoría debe escalar solo cuando demuestre **recompra, margen positivo, bajo reclamo, baja merma y TAT confiable**. Ahí sí tiene sentido evolucionar hacia cocinas compartidas, inventario propio, vida útil mayor y planes de varios días.
 
 ---
-
-## 19. Fuentes base
-
-Estrategia construida a partir de los tres reportes adjuntos:
-
-1. **Reporte de precio total:** estrategias para reducir el precio total que paga el cliente.
-2. **Reporte de satisfacción:** estrategia analítica para elevar el CSAT.
-3. **Reporte de tiempo de entrega:** estrategias para reducir el tiempo de entrega.
-
