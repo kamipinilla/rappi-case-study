@@ -49,9 +49,9 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## 1. Tesis estratégica
 
-La estrategia de **meal prep en Turbo** debe tratarse como una nueva categoría de conveniencia, no como una extensión más del marketplace de restaurantes. El objetivo no es ofrecer “más platos”, sino ofrecer **comidas predecibles, rápidas, de buen precio total y con alta confiabilidad**.
+La estrategia de **meal prep en Turbo** debe tratarse como una nueva categoría de conveniencia, no como una extensión más del marketplace de restaurantes. El objetivo no es ofrecer "más platos", sino ofrecer **comidas predecibles, rápidas, de buen precio total y con alta confiabilidad**.
 
-La propuesta base debe mantenerse, pero con una precisión importante: **“eat now” y “eat later” no deben operar igual en todas las zonas**. En zonas densas y céntricas puede prometerse velocidad tipo Turbo; en zonas periféricas o de baja densidad, la promesa debe moverse hacia ventanas, pedidos programados, packs o cobertura más selectiva.
+La propuesta base debe mantenerse, pero con una precisión importante: **"eat now" y "eat later" no deben operar igual en todas las zonas**. En zonas densas y céntricas puede prometerse velocidad tipo Turbo; en zonas periféricas o de baja densidad, la promesa debe moverse hacia ventanas, pedidos programados, packs o cobertura más selectiva.
 
 La lógica estratégica se sostiene sobre tres premisas operativas:
 
@@ -85,12 +85,12 @@ La propuesta debe comunicar tres beneficios en el primer nivel de la interfaz:
 
 ### 2.2 Qué problema resuelve
 
-Meal prep debe resolver necesidades concretas, no venderse como “comida preparada” genérica.
+Meal prep debe resolver necesidades concretas, no venderse como "comida preparada" genérica.
 
 | Necesidad | Producto recomendado | Métrica de éxito |
 |---|---|---|
 | Almuerzo alto en proteína | Bowl o plato caliente con proteína clara, carbohidrato y vegetales | Recompra weekday lunch, rating por SKU |
-| Almuerzo vegetariano balanceado | Legumbres, granos, vegetales y proteína vegetal/huevo según mercado | Conversión y reclamos bajos por “porción insuficiente” |
+| Almuerzo vegetariano balanceado | Legumbres, granos, vegetales y proteína vegetal/huevo según mercado | Conversión y reclamos bajos por "porción insuficiente" |
 | Cena ligera | Sopa, wrap, ensalada robusta, bowl pequeño | Recompra dinner, bajo reclamo por frescura |
 | Comida para mañana | Eat later refrigerado 24–48h | Attach rate a pedidos de hoy, recompra D7/D30 |
 | Ahorro | Pack 2 comidas o value SKU | Precio total vs alternativa comparable |
@@ -212,7 +212,7 @@ Tácticas prioritarias:
 
 Aquí el potencial existe, pero no conviene vender la misma promesa de velocidad que en zonas céntricas.
 
-**Razón:** mayor distancia y menor densidad elevan costo y riesgo de incumplimiento. La satisfacción puede caer si se promete “Turbo” y se entrega como delivery estándar.
+**Razón:** mayor distancia y menor densidad elevan costo y riesgo de incumplimiento. La satisfacción puede caer si se promete "Turbo" y se entrega como delivery estándar.
 
 **Oferta recomendada:**
 
@@ -240,7 +240,7 @@ Estas zonas no deberían ser la primera prioridad para eat now.
 | Cobertura selectiva | Solo microzonas con densidad suficiente |
 | Eat later | Más viable que eat now |
 | Packs | 2–3 comidas para diluir envío |
-| Ventanas | Entrega programada o “ahorra si esperas” |
+| Ventanas | Entrega programada o "ahorra si esperas" |
 | Drops agrupados | Oficinas, universidades, conjuntos, zonas industriales |
 | Menú value | SKUs simples, abundantes y estables |
 
@@ -315,7 +315,7 @@ La categoría tiene una ventaja estructural: al no cocinar desde cero, puede red
 | Menú corto | Menos errores y preparación más rápida | Mejor TAT y CSAT |
 | Radio dinámico | Mostrar solo donde se puede cumplir | Menos late orders |
 | Courier steering | Repartidores cerca de aliados/hubs en horas pico | Menor asignación y pickup |
-| Estados operativos estrictos | “Listo”, “en preparación”, “agotado” reales | Mejor ETA |
+| Estados operativos estrictos | "Listo", "en preparación", "agotado" reales | Mejor ETA |
 | No batching para hot sensible | Evita comida fría o tarde | Mejor satisfacción |
 | Batching selectivo para eat later | Reduce costo sin dañar calidad | Menor precio total |
 
@@ -377,9 +377,9 @@ Meal prep debe tener una arquitectura de precio más simple que restaurantes tra
 
 La interfaz debe mostrar una promesa tipo:
 
-> **“Meal Prep desde $X total con Pro”**  
-> **“Precio final estimado: plato + envío + fee”**  
-> **“Ahorra comprando 2 comidas”**
+> **"Meal Prep desde $X total con Pro"**  
+> **"Precio final estimado: plato + envío + fee"**  
+> **"Ahorra comprando 2 comidas"**
 
 El usuario debe entender el ahorro antes del checkout. La satisfacción cae cuando el cliente descubre cargos tarde o siente que la promoción no era clara.
 
@@ -390,11 +390,11 @@ El usuario debe entender el ahorro antes del checkout. La satisfacción cae cuan
 | Céntrica + adinerada | Pro Black, bundles premium, menor fee, prioridad, descuento por recurrencia |
 | Céntrica + no adinerada | SKU value, envío reducido, fee waiver, pack 2 comidas, promos lunch |
 | Periférica + adinerada | Packs programados, suscripción, menor urgencia, mayor ticket |
-| Periférica + no adinerada | Entrega agrupada, umbral bajo, pack económico, ventanas “ahorra si esperas” |
+| Periférica + no adinerada | Entrega agrupada, umbral bajo, pack económico, ventanas "ahorra si esperas" |
 
 ### 7.4 Acuerdos con aliados
 
-La negociación con restaurantes no debe ser “bajen todos los precios”. Debe ser específica:
+La negociación con restaurantes no debe ser "bajen todos los precios". Debe ser específica:
 
 | Palanca | Qué recibe el aliado | Qué recibe el usuario |
 |---|---|---|
@@ -421,7 +421,7 @@ La plataforma debe pedir mejores precios a cambio de algo concreto: demanda pred
 
 ## 8. Estrategia de puntaje de satisfacción
 
-La satisfacción no debe depender de que el plato sea “rico” solamente. En meal prep, el cliente evalúa cuatro cosas:
+La satisfacción no debe depender de que el plato sea "rico" solamente. En meal prep, el cliente evalúa cuatro cosas:
 
 1. ¿Llegó rápido?
 2. ¿Llegó como esperaba?
@@ -460,7 +460,7 @@ Cada SKU debe mostrar:
 - Porción.
 - Calorías o macros cuando aplique.
 - Tiempo estimado.
-- “Comer ahora” o “Guardar refrigerado”.
+- "Comer ahora" o "Guardar refrigerado".
 - Instrucciones de recalentado.
 - Fecha/hora de preparación o vencimiento.
 - Alérgenos relevantes.
@@ -514,7 +514,7 @@ Pro debe resolver el problema de precio total.
 
 Ejemplo de mecánica:
 
-> **“Pide 3 meal preps en el mes y desbloquea envío/fee reducido en el siguiente.”**
+> **"Pide 3 meal preps en el mes y desbloquea envío/fee reducido en el siguiente."**
 
 ### 9.2 Pro Black
 
@@ -600,7 +600,7 @@ Debe existir un score por aliado:
 
 **Target:** usuarios saludables, universitarios, oficinas.
 
-**Promesa:** completo, no “ensalada débil”.
+**Promesa:** completo, no "ensalada débil".
 
 **Oferta:** legumbres, granos, vegetales, huevo/tofu según mercado.
 
