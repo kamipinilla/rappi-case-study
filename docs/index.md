@@ -45,7 +45,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 **Objetivo:** lanzar y escalar una propuesta de meal prep en Turbo que reduzca el tiempo de entrega, reduzca el precio total pagado por el cliente y aumente el puntaje de satisfacción.
 
-**Propuesta base:** lanzar meal prep en Turbo con dos carriles: **eat now**, platos calientes para consumo inmediato, y **eat later**, comidas refrigeradas para 24 a 48 horas. La operación inicial debe apoyarse en restaurantes aliados cercanos, pocos SKUs, un submenú Turbo curado, finishing mínimo, control térmico y packaging estándar. La propuesta debe resolver necesidades concretas como almuerzo alto en proteína, almuerzo vegetariano balanceado, cena ligera o comida para mañana, apoyándose en Pro/Pro Black para incentivar recurrencia. Tras validar adopción sostenida y margen, podrían explorarse cocinas propias o compartidas, vida útil superior a 48 horas y packs para varios días.
+**Propuesta base:** lanzar meal prep en Turbo con dos modalidades: **eat now**, platos calientes para consumo inmediato, y **eat later**, comidas refrigeradas para 24 a 48 horas. La operación inicial debe apoyarse en restaurantes aliados cercanos, pocos SKUs, un submenú Turbo curado, finishing mínimo, control térmico y packaging estándar. La propuesta debe resolver necesidades concretas como almuerzo alto en proteína, almuerzo vegetariano balanceado, cena ligera o comida para mañana, apoyándose en Pro/Pro Black para incentivar recurrencia. Tras validar adopción sostenida y margen, podrían explorarse cocinas propias o compartidas, vida útil superior a 48 horas y packs para varios días.
 
 ---
 
@@ -73,9 +73,9 @@ La categoría debe escalar solo si consigue simultáneamente:
 
 ### 2.1 Promesa al usuario
 
-**Meal Prep Turbo = comida lista, confiable y más económica que pedir un plato tradicional de restaurante, con dos carriles claros.**
+**Meal Prep Turbo = comida lista, confiable y más económica que pedir un plato tradicional de restaurante, con dos modalidades claras.**
 
-| Carril | Promesa | Caso de uso | Principio operativo |
+| Modalidad | Promesa | Caso de uso | Principio operativo |
 |---|---|---|---|
 | **Eat now** | Plato caliente o templado para consumo inmediato | Almuerzo rápido, cena ligera, comida post-gym, día laboral | Preparación anticipada + finishing mínimo + radio corto |
 | **Eat later** | Comida refrigerada para consumir en 24–48 horas | Cena de la noche, comida de mañana, planificación semanal ligera | Stock refrigerado + empaque seguro + instrucciones de recalentado |
@@ -113,7 +113,7 @@ Recomendación inicial por microzona:
 | Vegetariano balanceado | 1–2 | Lentejas + arroz + vegetales; bowl de garbanzos; tofu o huevo según mercado |
 | Cena ligera | 1–2 | Ensalada robusta, wrap, sopa + proteína |
 | Eat later / mañana | 2–3 | Pasta proteica, bowl refrigerado, arroz con pollo, opción vegetariana refrigerada |
-| Value SKU | 1–2 | Plato económico, simple, abundante, especialmente para zonas no adineradas |
+| Value SKU | 1–2 | Plato económico, simple, abundante, especialmente para zonas de menor poder adquisitivo |
 
 El menú ideal inicial es de **8 a 12 SKUs por zona**, no más. La rotación semanal puede cambiar 20%–30% del menú, pero los SKUs ganadores deben mantenerse para construir hábito.
 
@@ -154,18 +154,18 @@ Regla operativa:
 La estrategia debe diferenciarse por dos ejes:
 
 1. **Centralidad:** zonas céntricas vs zonas periféricas.
-2. **Nivel socioeconómico:** zonas adineradas vs zonas no adineradas.
+2. **Nivel socioeconómico:** zonas de mayor poder adquisitivo vs zonas de menor poder adquisitivo.
 
 ### 4.1 Matriz de zonas
 
-| Zona | Atractivo para lanzamiento | Estrategia principal | Carril prioritario |
+| Zona | Atractivo para lanzamiento | Estrategia principal | Modalidad prioritaria |
 |---|---|---|---|
-| **Céntrica + adinerada** | Muy alto | Velocidad, calidad, Pro Black, proteína, fitness, oficinas | Eat now + eat later |
-| **Céntrica + no adinerada** | Alto | Precio total bajo, value SKUs, combos, alta densidad | Eat now value + eat later económico |
-| **Periférica + adinerada** | Medio | Packs, programación, calidad, conveniencia familiar | Eat later + ventanas programadas |
-| **Periférica + no adinerada** | Bajo al inicio | Cobertura selectiva, packs, umbrales, drops agrupados | Eat later value, no promesa Turbo agresiva |
+| **Céntrica + mayor poder adquisitivo** | Muy alto | Velocidad, calidad, Pro Black, proteína, fitness, oficinas | Eat now + eat later |
+| **Céntrica + menor poder adquisitivo** | Alto | Precio total bajo, value SKUs, combos, alta densidad | Eat now value + eat later económico |
+| **Periférica + mayor poder adquisitivo** | Medio | Packs, programación, calidad, conveniencia familiar | Eat later + ventanas programadas |
+| **Periférica + menor poder adquisitivo** | Bajo al inicio | Cobertura selectiva, packs, umbrales, drops agrupados | Eat later value, no promesa Turbo agresiva |
 
-### 4.2 Zonas céntricas adineradas
+### 4.2 Zonas céntricas de mayor poder adquisitivo
 
 Estas deben ser las primeras zonas de lanzamiento.
 
@@ -184,7 +184,7 @@ Estas deben ser las primeras zonas de lanzamiento.
 
 **Promesa operativa:** radio corto, alta disponibilidad, ETA exigente. Si no se puede cumplir, el SKU no se muestra.
 
-### 4.3 Zonas céntricas no adineradas
+### 4.3 Zonas céntricas de menor poder adquisitivo
 
 También son atractivas por densidad, pero la estrategia debe ser distinta.
 
@@ -210,7 +210,7 @@ Tácticas prioritarias:
 - Promos en horas valle.
 - Descuentos Pro más funcionales que aspiracionales.
 
-### 4.4 Zonas periféricas adineradas
+### 4.4 Zonas periféricas de mayor poder adquisitivo
 
 Aquí el potencial existe, pero no conviene vender la misma promesa de velocidad que en zonas céntricas.
 
@@ -229,7 +229,7 @@ Aquí el potencial existe, pero no conviene vender la misma promesa de velocidad
 
 **Pricing:** menos descuento agresivo, más valor en conveniencia, calidad, recurrencia y Pro Black.
 
-### 4.5 Zonas periféricas no adineradas
+### 4.5 Zonas periféricas de menor poder adquisitivo
 
 Estas zonas no deberían ser la primera prioridad para eat now.
 
@@ -325,10 +325,10 @@ La categoría tiene una ventaja estructural: al no cocinar desde cero, puede red
 
 | Zona | Eat now | Eat later |
 |---|---|---|
-| Céntrica + adinerada | Promesa rápida, tipo Turbo | Inmediato o programado |
-| Céntrica + no adinerada | Promesa rápida si hay densidad | Inmediato, con packs |
-| Periférica + adinerada | Solo si hay aliado cercano | Principalmente programado |
-| Periférica + no adinerada | No priorizar al inicio | Programado, agrupado o packs |
+| Céntrica + mayor poder adquisitivo | Promesa rápida, tipo Turbo | Inmediato o programado |
+| Céntrica + menor poder adquisitivo | Promesa rápida si hay densidad | Inmediato, con packs |
+| Periférica + mayor poder adquisitivo | Solo si hay aliado cercano | Principalmente programado |
+| Periférica + menor poder adquisitivo | No priorizar al inicio | Programado, agrupado o packs |
 
 La clave es no usar una promesa única. **La promesa debe ser dinámica por microzona, hora, backlog, clima, disponibilidad de repartidores y tipo de SKU.**
 
@@ -389,10 +389,10 @@ El usuario debe entender el ahorro antes del checkout. La satisfacción cae cuan
 
 | Zona | Táctica de precio |
 |---|---|
-| Céntrica + adinerada | Pro Black, bundles premium, menor fee, prioridad, descuento por recurrencia |
-| Céntrica + no adinerada | SKU value, envío reducido, fee waiver, pack 2 comidas, promos lunch |
-| Periférica + adinerada | Packs programados, suscripción, menor urgencia, mayor ticket |
-| Periférica + no adinerada | Entrega agrupada, umbral bajo, pack económico, ventanas "ahorra si esperas" |
+| Céntrica + mayor poder adquisitivo | Pro Black, bundles premium, menor fee, prioridad, descuento por recurrencia |
+| Céntrica + menor poder adquisitivo | SKU value, envío reducido, fee waiver, pack 2 comidas, promos lunch |
+| Periférica + mayor poder adquisitivo | Packs programados, suscripción, menor urgencia, mayor ticket |
+| Periférica + menor poder adquisitivo | Entrega agrupada, umbral bajo, pack económico, ventanas "ahorra si esperas" |
 
 ### 7.4 Acuerdos con aliados
 
@@ -414,9 +414,9 @@ La plataforma debe pedir mejores precios a cambio de algo concreto: demanda pred
 | Pack | Descripción | Zona prioritaria | Objetivo |
 |---|---|---|---|
 | Hoy + mañana | 1 eat now + 1 eat later | Céntricas | Aumentar ticket y diluir envío |
-| Pack 2 económico | 2 eat later value | Céntrica no adinerada, periferia no adinerada | Bajar precio total por comida |
-| Pack fitness | 3 comidas altas en proteína | Céntrica adinerada, periferia adinerada | Recurrencia y Pro Black |
-| Pack familiar | 3–4 comidas refrigeradas | Periferia adinerada | Conveniencia y ticket alto |
+| Pack 2 económico | 2 eat later value | Céntrica de menor poder adquisitivo, periferia de menor poder adquisitivo | Bajar precio total por comida |
+| Pack fitness | 3 comidas altas en proteína | Céntrica de mayor poder adquisitivo, periferia de mayor poder adquisitivo | Recurrencia y Pro Black |
+| Pack familiar | 3–4 comidas refrigeradas | Periferia de mayor poder adquisitivo | Conveniencia y ticket alto |
 | Lunch semanal ligero | 3 almuerzos programados | Oficinas, zonas céntricas | Recurrencia weekday |
 
 ---
@@ -596,7 +596,7 @@ Debe existir un score por aliado:
 
 **Pricing:** premium accesible; descuento por recompra.
 
-**Zona ideal:** céntrica adinerada y céntrica no adinerada con variante value.
+**Zona ideal:** céntrica de mayor poder adquisitivo y céntrica de menor poder adquisitivo con variante value.
 
 ### 11.2 Almuerzo vegetariano balanceado
 
@@ -620,7 +620,7 @@ Debe existir un score por aliado:
 
 **Pricing:** menor ticket, ideal para Pro.
 
-**Zona ideal:** céntrica adinerada, periférica adinerada y usuarios recurrentes.
+**Zona ideal:** céntrica de mayor poder adquisitivo, periférica de mayor poder adquisitivo y usuarios recurrentes.
 
 ### 11.4 Comida para mañana
 
@@ -632,13 +632,13 @@ Debe existir un score por aliado:
 
 **Pricing:** pack 2 o 3 comidas.
 
-**Zona ideal:** periféricas, zonas adineradas, zonas con menor viabilidad de eat now.
+**Zona ideal:** periféricas, zonas de mayor poder adquisitivo, zonas con menor viabilidad de eat now.
 
 ---
 
 ## 12. Pilotos recomendados
 
-### 12.1 Piloto 1: zona céntrica adinerada
+### 12.1 Piloto 1: zona céntrica de mayor poder adquisitivo
 
 **Objetivo:** validar calidad, recurrencia y Pro/Pro Black.
 
@@ -651,7 +651,7 @@ Debe existir un score por aliado:
 | Pricing | Descuento moderado + beneficios Pro |
 | Riesgo | Que se perciba como caro si no se muestra valor total |
 
-### 12.2 Piloto 2: zona céntrica no adinerada
+### 12.2 Piloto 2: zona céntrica de menor poder adquisitivo
 
 **Objetivo:** validar precio total bajo con densidad alta.
 
@@ -664,7 +664,7 @@ Debe existir un score por aliado:
 | Pricing | SKU value + fee waiver + pack 2 |
 | Riesgo | Que los subsidios escondan mala economía |
 
-### 12.3 Piloto 3: periferia adinerada
+### 12.3 Piloto 3: periferia de mayor poder adquisitivo
 
 **Objetivo:** validar eat later y packs programados.
 
@@ -677,7 +677,7 @@ Debe existir un score por aliado:
 | Pricing | Packs + Pro Black |
 | Riesgo | Baja densidad y altos costos logísticos |
 
-### 12.4 Piloto 4: periferia no adinerada
+### 12.4 Piloto 4: periferia de menor poder adquisitivo
 
 Este debe ser el último piloto.
 
@@ -727,7 +727,7 @@ Este debe ser el último piloto.
 | Por aliado | Prep time, cancelaciones, errores, reclamos |
 | Por cohorte | Nuevos, recurrentes, Pro, Pro Black, price-sensitive |
 | Por franja | Lunch, dinner, horas valle, fines de semana |
-| Por carril | Eat now vs eat later |
+| Por modalidad | Eat now vs eat later |
 
 ---
 
@@ -754,7 +754,7 @@ Acciones:
 
 Acciones:
 
-- Lanzar en 2 tipos de zona: céntrica adinerada y céntrica no adinerada.
+- Lanzar en 2 tipos de zona: céntrica de mayor poder adquisitivo y céntrica de menor poder adquisitivo.
 - Operar lunch y dinner, no todo el día.
 - Medir por SKU, aliado, zona y franja.
 - A/B test de precio cerrado vs precio tradicional.
@@ -771,7 +771,7 @@ Acciones:
 - Ajustar precios por zona.
 - Introducir packs eat later.
 - Activar batching selectivo solo para refrigerados.
-- Expandir a periferia adinerada con programación.
+- Expandir a periferia de mayor poder adquisitivo con programación.
 - Mejorar forecast por franja.
 
 ### Fase 3: escalamiento
@@ -828,7 +828,7 @@ En esta fase sí tiene sentido evaluar cocinas propias, cocinas compartidas, vid
 | Subsidios excesivos | Margen negativo no sostenible | Promos segmentadas y con holdout |
 | Baja calidad del aliado | Reclamos, errores, cancelaciones | Scorecard y bloqueo temporal |
 | Desperdicio en eat later | Pérdida de margen | Forecast, sell-through, descuentos de clearance explícitos |
-| Packaging deficiente | Derrames, frío/calor incorrecto | Estándar obligatorio por carril |
+| Packaging deficiente | Derrames, frío/calor incorrecto | Estándar obligatorio por modalidad |
 | Expansión prematura | Complejidad sin demanda | Escalar solo con recompra, margen y CSAT |
 | Periferia mal atendida | Costo alto y experiencia mala | Programación, packs, drops agrupados |
 | Pro percibido como insuficiente | No aumenta recurrencia | Beneficios concretos de envío, fee y prioridad |
@@ -867,12 +867,12 @@ En esta fase sí tiene sentido evaluar cocinas propias, cocinas compartidas, vid
 
 En síntesis, la estrategia propuesta es:
 
-> **Lanzar meal prep en Turbo como una categoría de comida preparada, rápida y recurrente, con dos carriles: eat now para microzonas donde Rappi pueda cumplir velocidad y confiabilidad; y eat later para zonas donde la planificación genere más valor que la inmediatez, apoyándose en packs, entregas programadas y eficiencia logística.**
+> **Lanzar meal prep en Turbo como una categoría de comida preparada, rápida y recurrente, con dos modalidades: eat now para microzonas donde Rappi pueda cumplir velocidad y confiabilidad; y eat later para zonas donde la planificación genere más valor que la inmediatez, apoyándose en packs, entregas programadas y eficiencia logística.**
 
 La primera ola debe enfocarse en **zonas céntricas**, con dos versiones:
 
-1. Una versión premium/conveniencia para zonas adineradas.
-2. Una versión value/precio total bajo para zonas no adineradas.
+1. Una versión premium/conveniencia para zonas de mayor poder adquisitivo.
+2. Una versión value/precio total bajo para zonas de menor poder adquisitivo.
 
 En periferias, la expansión debe ser selectiva: **eat later, packs, programación y entregas agrupadas** antes que prometer velocidad Turbo.
 
