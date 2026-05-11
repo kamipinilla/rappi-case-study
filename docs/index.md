@@ -4,7 +4,7 @@ Para el caso de estudio se desarrolló una herramienta web para hacer análisis 
 
 La base de datos fue poblada directamente del archivo [COMPETITORS_DATA](https://docs.google.com/spreadsheets/d/1-FolE32bidoXzmmW977H-hE3mfbnB72ZbOgfv_VT7zw/edit?usp=drive_link). Para completar el análisis comparativo, se agregaron valores simulados para las métricas faltantes de Rappi.
 
-A continuación se presentan los hallazgos más relevantes para el caso de estudio y, con base en ellos, se propone una estrategia de **meal prep** para mejorar la competitividad de Rappi.
+A continuación se presentan los hallazgos más relevantes para el caso de estudio y se propone una estrategia de **meal prep** para mejorar la competitividad de Rappi.
 
 ---
 
