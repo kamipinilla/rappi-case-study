@@ -31,7 +31,20 @@ El objetivo central es reducir el tiempo de espera en zonas periféricas mediant
 
 Así, Turbo Meal Prep no debe operar como un marketplace amplio de restaurantes, sino como un menú curado de alta rotación, diseñado para reducir fricción, acelerar preparación y mejorar la confiabilidad de la promesa de entrega.
 
-## 3. Enfoque específico para zonas periféricas
+## 3. Datos concretos de desventaja frente a Uber Eats
+
+La UI de análisis, con datos ya cargados en la base, muestra una brecha concreta en **Avg Delivery Time (mins)** para zonas relevantes de Ciudad de México. En estas zonas, **Uber Eats tiene ventaja sobre Rappi** porque registra tiempos promedio de entrega más bajos.
+
+La columna de diferencia de la UI está calculada como **Uber Eats - Rappi**. Por eso aparece con signo negativo: el número indica cuántos minutos menos tarda Uber Eats frente a Rappi.
+
+| Zona | Uber Eats (mins) | Rappi (mins) | Diferencia UI: Uber Eats - Rappi (mins) | Ventaja de Uber Eats (mins) | Ventaja porcentual |
+|---|---:|---:|---:|---:|---:|
+| Santa Fe | 30.22 | 36.41 | -6.19 | 6.19 | 17% |
+| Lomas de Chapultepec | 27.73 | 30.47 | -2.74 | 2.74 | 9% |
+
+Estos datos refuerzan la necesidad de una estrategia de meal prep en Turbo: en **Santa Fe**, Rappi debe cerrar una desventaja de **6.19 minutos** frente a Uber Eats; en **Lomas de Chapultepec**, la desventaja es de **2.74 minutos**. Los porcentajes corresponden a la brecha relativa registrada en la base, mientras que los valores promedio y la diferencia en minutos fueron tomados desde la UI.
+
+## 4. Enfoque específico para zonas periféricas
 
 La estrategia debe priorizar zonas periféricas donde exista suficiente demanda potencial, pero donde el modelo tradicional de delivery rápido sea ineficiente por baja densidad o distancia al centro.
 
@@ -45,33 +58,33 @@ El enfoque recomendado es diferenciar la operación según tipo de zona:
 
 En periferias, el carril **eat later** debe tener un rol estratégico mayor, porque permite operar con menor urgencia, mejor planificación, más batching y menor dependencia de la preparación en tiempo real.
 
-## 4. Justificación estratégica
+## 5. Justificación estratégica
 
 La propuesta se justifica por cinco razones principales:
 
-### 4.1. Reduce el componente más variable del pedido: la preparación
+### 5.1. Reduce el componente más variable del pedido: la preparación
 
 En el delivery tradicional, el tiempo total depende de la aceptación del restaurante, preparación, asignación del repartidor, recogida y entrega. Con meal prep, una parte importante de la preparación ocurre antes del pedido, reduciendo la variabilidad operativa.
 
-### 4.2. Aumenta la disponibilidad de oferta cercana
+### 5.2. Aumenta la disponibilidad de oferta cercana
 
 En muchas zonas periféricas, la oferta gastronómica disponible en tiempos competitivos es limitada. Al trabajar con restaurantes aliados cercanos y SKUs diseñados para Turbo, Rappi puede crear una oferta confiable sin depender de restaurantes lejanos.
 
-### 4.3. Facilita la consolidación logística
+### 5.3. Facilita la consolidación logística
 
 El carril eat later permite mover lotes de comidas hacia zonas periféricas y despachar desde inventario cercano. Esto reduce viajes largos de un solo pedido y permite agrupar entregas sin afectar gravemente la experiencia del usuario.
 
-### 4.4. Mejora la recurrencia
+### 5.4. Mejora la recurrencia
 
 Las necesidades que resuelve la propuesta —almuerzo saludable, comida alta en proteína, cena ligera o comida para el día siguiente— son recurrentes. Esto permite construir hábitos de consumo, especialmente en usuarios Pro y Pro Black.
 
-### 4.5. Permite validar antes de invertir en infraestructura propia
+### 5.5. Permite validar antes de invertir en infraestructura propia
 
 Al iniciar con restaurantes aliados, pocos SKUs y packaging estándar, Rappi puede probar demanda, margen, merma y recurrencia antes de avanzar hacia cocinas propias, cocinas compartidas o producción centralizada.
 
-## 5. Estrategia operativa recomendada
+## 6. Estrategia operativa recomendada
 
-### 5.1. Crear un submenú Turbo Meal Prep
+### 6.1. Crear un submenú Turbo Meal Prep
 
 El submenú debe ser simple, curado y orientado a necesidades concretas, no a restaurantes individuales. Una posible estructura sería:
 
@@ -92,7 +105,7 @@ Cada SKU debe comunicar claramente:
 - Información básica nutricional.
 - Ingredientes y alérgenos relevantes.
 
-### 5.2. Operar con pocos SKUs de alta rotación
+### 6.2. Operar con pocos SKUs de alta rotación
 
 El piloto debe comenzar con una oferta limitada de aproximadamente 8 a 12 SKUs:
 
@@ -103,7 +116,7 @@ El piloto debe comenzar con una oferta limitada de aproximadamente 8 a 12 SKUs:
 
 Esto reduce complejidad, facilita el control de calidad, mejora la predicción de demanda y disminuye la merma.
 
-### 5.3. Seleccionar restaurantes ancla por microzona
+### 6.3. Seleccionar restaurantes ancla por microzona
 
 Rappi debe identificar restaurantes aliados ubicados dentro o cerca de las zonas periféricas objetivo. Estos aliados deben operar bajo estándares definidos de:
 
@@ -117,13 +130,13 @@ Rappi debe identificar restaurantes aliados ubicados dentro o cerca de las zonas
 
 El objetivo no es sumar muchos restaurantes, sino construir una red pequeña y confiable de aliados capaces de sostener la promesa de Turbo Meal Prep.
 
-### 5.4. Diferenciar la operación de eat now y eat later
+### 6.4. Diferenciar la operación de eat now y eat later
 
 **Eat now** debe enfocarse en platos calientes con finishing mínimo, preparación rápida y radio de cobertura limitado. Su promesa debe activarse únicamente cuando exista capacidad real de cumplir tiempos competitivos.
 
 **Eat later** debe funcionar como inventario refrigerado de conveniencia. Debe contar con control de temperatura, fecha de preparación, vida útil recomendada, instrucciones de consumo y empaques estandarizados.
 
-### 5.5. Usar Pro y Pro Black para generar recurrencia
+### 6.5. Usar Pro y Pro Black para generar recurrencia
 
 La propuesta debe integrarse con beneficios de Rappi Pro y Pro Black para incentivar frecuencia, no solo descuentos aislados. Algunas mecánicas recomendadas son:
 
@@ -136,7 +149,7 @@ La propuesta debe integrarse con beneficios de Rappi Pro y Pro Black para incent
 
 La meta es convertir meal prep en hábito, especialmente para usuarios que compran almuerzo o cena varias veces por semana.
 
-## 6. Impacto esperado
+## 7. Impacto esperado
 
 La estrategia puede impactar la reducción de tiempos de espera en zonas periféricas a través de los siguientes efectos:
 
@@ -152,7 +165,7 @@ La estrategia puede impactar la reducción de tiempos de espera en zonas perifé
 
 El mayor impacto debería venir del carril **eat later**, porque permite planificar inventario, consolidar abastecimiento y reducir la dependencia de la preparación bajo demanda. El carril **eat now** complementa la propuesta en zonas donde existan aliados cercanos con capacidad real de operar rápido.
 
-## 7. Plan de acción
+## 8. Plan de acción
 
 ### Fase 1: Diseño del piloto
 
@@ -207,7 +220,7 @@ Acciones:
 5. Negociar acuerdos más profundos con aliados de alto desempeño.
 6. Evaluar marca propia o co-branding con restaurantes seleccionados.
 
-## 8. KPIs de seguimiento
+## 9. KPIs de seguimiento
 
 Para evaluar la efectividad de la estrategia, se deben medir KPIs específicos de reducción de tiempos, calidad y recurrencia:
 
@@ -224,7 +237,7 @@ Para evaluar la efectividad de la estrategia, se deben medir KPIs específicos d
 | Calificación por SKU | Medir aceptación del producto |
 | Pedidos por usuario Pro/Pro Black | Evaluar efectividad de beneficios de recurrencia |
 
-## 9. Conclusión
+## 10. Conclusión
 
 La propuesta de meal prep en Turbo puede convertirse en una estrategia efectiva para reducir tiempos de espera en zonas periféricas si se implementa como un modelo de inventario cercano, menú curado y operación diferenciada por carril.
 
