@@ -21,6 +21,7 @@ export type MetricData = {
 export type Zone = {
   id: Id
   name: string
+  isPrioritized: boolean
   referenceData: MetricData
   comparisonData: MetricData
   difference: number
@@ -33,7 +34,12 @@ export type Response = {
 
 export interface MetricAnalyzerRepo {
   getMetricType(metricId: Id): Promise<MetricType>
-  getZoneNames(zoneIds: Id[]): Promise<Map<Id, string>>
+  getZones(zoneIds: Id[]): Promise<Map<Id, ZoneInfo>>
+}
+
+export type ZoneInfo = {
+  name: string
+  isPrioritized: boolean
 }
 
 type ComparableZone = {
@@ -71,13 +77,13 @@ export class MetricAnalyzer {
         this.compareZonesByDifference(first, second, metricType),
       )
 
-    const zoneNames = await this.repo.getZoneNames(
+    const zoneInfoById = await this.repo.getZones(
       comparableZones.map((zone) => zone.id),
     )
 
     return {
       comparisonType: this.getComparisonType(metricType),
-      zones: comparableZones.map((zone) => this.mapZone(zone, zoneNames)),
+      zones: comparableZones.map((zone) => this.mapZone(zone, zoneInfoById)),
     }
   }
 
@@ -152,16 +158,17 @@ export class MetricAnalyzer {
     }
   }
 
-  private mapZone(zone: ComparableZone, zoneNames: Map<Id, string>): Zone {
-    const name = zoneNames.get(zone.id)
+  private mapZone(zone: ComparableZone, zoneInfoById: Map<Id, ZoneInfo>): Zone {
+    const zoneInfo = zoneInfoById.get(zone.id)
 
-    if (name === undefined) {
+    if (zoneInfo === undefined) {
       throw new Error(`Missing zone name for zone ${zone.id}.`)
     }
 
     return {
       id: zone.id,
-      name,
+      name: zoneInfo.name,
+      isPrioritized: zoneInfo.isPrioritized,
       referenceData: zone.referenceData,
       comparisonData: zone.comparisonData,
       difference: Math.abs(zone.rawDifference),

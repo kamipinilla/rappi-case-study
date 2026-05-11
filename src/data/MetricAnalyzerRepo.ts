@@ -2,9 +2,10 @@ import { z } from 'zod'
 
 import { SqlJsDatabaseConnection } from '../db/SqlJsDatabaseConnection'
 import type { Id } from './MetricsProvider'
-import type { MetricAnalyzerRepo, MetricType } from './MetricAnalyzer'
+import type { MetricAnalyzerRepo, MetricType, ZoneInfo } from './MetricAnalyzer'
 
 const metricTypeSchema = z.enum(['higher_is_better', 'lower_is_better'])
+const prioritizedZoneCodes = new Set(['high_priority', 'prioritized'])
 
 export class SqlMetricAnalyzerRepo implements MetricAnalyzerRepo {
   constructor(private readonly databaseConnection: SqlJsDatabaseConnection) {}
@@ -30,7 +31,7 @@ export class SqlMetricAnalyzerRepo implements MetricAnalyzerRepo {
     return metricType.data
   }
 
-  async getZoneNames(zoneIds: Id[]): Promise<Map<Id, string>> {
+  async getZones(zoneIds: Id[]): Promise<Map<Id, ZoneInfo>> {
     if (zoneIds.length === 0) {
       return new Map()
     }
@@ -39,20 +40,29 @@ export class SqlMetricAnalyzerRepo implements MetricAnalyzerRepo {
     const placeholders = zoneIds.map(() => '?').join(', ')
     const result = database.exec(
       `
-        SELECT id, name
+        SELECT zone.id, zone.name, zone_prioritization.code
         FROM zone
-        WHERE id IN (${placeholders})
+        INNER JOIN zone_prioritization
+          ON zone_prioritization.id = zone.prioritization_id
+        WHERE zone.id IN (${placeholders})
       `,
       zoneIds,
     )
 
     return new Map(
       (result[0]?.values ?? []).map((row) => {
-        const [id, name] = row
+        const [id, name, prioritizationCode] = row
 
-        return [String(id), String(name)]
+        return [
+          String(id),
+          {
+            name: String(name),
+            isPrioritized: prioritizedZoneCodes.has(
+              String(prioritizationCode),
+            ),
+          },
+        ]
       }),
     )
   }
-
 }

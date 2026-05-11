@@ -56,7 +56,11 @@ export function ZoneDifferenceList({
                   isSelected ? 'bg-orange-50' : 'bg-white'
                 }`}
               >
-                <td className="py-2.5 pl-4 pr-3 font-medium text-slate-800">
+                <td
+                  className={`py-2.5 pl-4 pr-3 text-slate-800 ${
+                    zone.isPrioritized ? 'font-bold' : 'font-medium'
+                  }`}
+                >
                   {zone.name}
                 </td>
                 <td className="px-3 py-2.5 text-right font-semibold text-slate-950">
