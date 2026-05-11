@@ -865,7 +865,7 @@ En esta fase sí tiene sentido evaluar cocinas propias, cocinas compartidas, vid
 
 ## 18. Estrategia final recomendada
 
-La estrategia completa debe ser:
+En síntesis, la estrategia propuesta es:
 
 > **Lanzar meal prep en Turbo como una categoría de comida preparada, rápida y recurrente, con dos carriles: eat now para microzonas donde Rappi pueda cumplir velocidad y confiabilidad; y eat later para zonas donde la planificación genere más valor que la inmediatez, apoyándose en packs, entregas programadas y eficiencia logística.**
 
