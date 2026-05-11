@@ -84,6 +84,7 @@ La propuesta debe comunicar tres beneficios en el primer nivel de la interfaz:
 
 - **Llega rápido:** porque el plato ya está parcialmente preparado.
 - **Sabes qué recibes:** porque son SKUs estandarizados, con porción, foto, macros y empaque consistente.
+- **Pagas menos:** porque el precio total se optimiza con SKUs value, packs, envío reducido y beneficios Pro.
 
 ### 2.2 Qué problema resuelve
 
