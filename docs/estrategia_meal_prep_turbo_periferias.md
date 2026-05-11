@@ -5,7 +5,7 @@
 La propuesta consiste en lanzar una oferta de **meal prep dentro de Turbo** con dos carriles operativos y comerciales:
 
 1. **Eat now**: platos calientes listos para consumo inmediato.
-2. **Eat later**: comidas refrigeradas diseñadas para consumirse en un horizonte de 24 a 48 horas.
+2. **Eat later**: comidas refrigeradas diseñadas para consumirse en un plazo de 24 a 48 horas.
 
 La operación inicial debe apoyarse en **restaurantes aliados cercanos**, con una oferta limitada de SKUs, un submenú Turbo curado, finishing mínimo, control térmico y packaging estándar. La propuesta debe resolver necesidades concretas del usuario, como:
 
@@ -33,14 +33,14 @@ Así, Turbo Meal Prep no debe operar como un marketplace amplio de restaurantes,
 
 ## 3. Ejemplos concretos de desventaja frente a la competencia
 
-Los datos muestran una brecha concreta en **Avg Delivery Time (mins)** para zonas relevantes de Ciudad de México. En estas zonas, **Uber Eats tiene ventaja sobre Rappi** porque registra tiempos promedio de entrega más bajos.
+Los datos muestran una brecha concreta en tiempo de entrega para zonas relevantes de Ciudad de México. En estas zonas, **Uber Eats tiene ventaja sobre Rappi** porque registra tiempos promedio de entrega más bajos.
 
 | Zona | Uber Eats (mins) | Rappi (mins) | Diferencia Uber Eats - Rappi (mins) | Ventaja porcentual |
 |---|---:|---:|---:|---:|
 | Santa Fe | 30.22 | 37.78 | -7.56 | 20% |
 | Lomas de Chapultepec | 27.73 | 33.41 | -5.68 | 17% |
 
-Estos datos refuerzan la necesidad de una estrategia de meal prep en Turbo: en **Santa Fe**, Rappi debe cerrar una desventaja de **7.56 minutos** frente a Uber Eats; en **Lomas de Chapultepec**, la desventaja es de **5.68 minutos**. Los porcentajes corresponden a la brecha relativa.
+Estos datos refuerzan la necesidad de una estrategia de meal prep en Turbo: en **Santa Fe**, Rappi debe cerrar una desventaja de **7.56 minutos** frente a Uber Eats; en **Lomas de Chapultepec**, la desventaja es de **5.68 minutos**.
 
 ## 4. Enfoque específico para zonas periféricas
 
@@ -74,7 +74,7 @@ El carril eat later permite mover lotes de comidas hacia zonas periféricas y de
 
 ### 5.4. Mejora la recurrencia
 
-Las necesidades que resuelve la propuesta —almuerzo saludable, comida alta en proteína, cena ligera o comida para el día siguiente— son recurrentes. Esto permite construir hábitos de consumo, especialmente en usuarios Pro y Pro Black.
+Las necesidades que resuelve la propuesta, almuerzo saludable, comida alta en proteína, cena ligera o comida para el día siguiente, son recurrentes. Esto permite construir hábitos de consumo, especialmente en usuarios Pro y Pro Black.
 
 ### 5.5. Permite validar antes de invertir en infraestructura propia
 
