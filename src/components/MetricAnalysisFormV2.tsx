@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
 
 import type { Company } from '../data/CompanyRepo'
 import type { Metric } from '../data/MetricRepo'
@@ -21,9 +21,17 @@ type InlineSelectProps = {
   value: string
   disabled: boolean
   selectedLabel: string
+  accentColor?: string
   children: ReactNode
   onChange: (value: string) => void
 }
+
+const DEFAULT_ACCENT_COLOR = '#94a3b8'
+const COMPANY_ACCENT_COLORS = {
+  didi: '#ffbe00',
+  rappi: '#ff441f',
+  uber: '#06c167',
+} as const
 
 const metricDisplayNames: Record<string, string> = {
   'Avg Delivery Time (mins)': 'tiempo de entrega',
@@ -38,16 +46,40 @@ function getMetricDisplayName(metric: Metric): string {
   return metricDisplayNames[metric.name] ?? metric.name
 }
 
+function getCompanyAccentColor(companyName: string): string {
+  const normalizedCompanyName = companyName.toLowerCase()
+
+  if (normalizedCompanyName.includes('uber')) {
+    return COMPANY_ACCENT_COLORS.uber
+  }
+
+  if (normalizedCompanyName.includes('didi')) {
+    return COMPANY_ACCENT_COLORS.didi
+  }
+
+  if (normalizedCompanyName.includes('rappi')) {
+    return COMPANY_ACCENT_COLORS.rappi
+  }
+
+  return DEFAULT_ACCENT_COLOR
+}
+
 function InlineSelect({
   id,
   ariaLabel,
   value,
   disabled,
   selectedLabel,
+  accentColor,
   children,
   onChange,
 }: InlineSelectProps) {
   const widthLabel = selectedLabel || ariaLabel
+  const resolvedAccentColor = accentColor ?? DEFAULT_ACCENT_COLOR
+  const accentStyle: CSSProperties = {
+    borderColor: resolvedAccentColor,
+    boxShadow: `0 0 0 1px ${resolvedAccentColor}`,
+  }
 
   return (
     <span className="relative inline-block min-w-0 max-w-full align-middle">
@@ -63,7 +95,8 @@ function InlineSelect({
         value={value}
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
-        className="absolute inset-0 h-full w-full appearance-none truncate rounded-full border border-[#ff441f] bg-white px-4 py-2 text-center text-base font-semibold text-slate-950 shadow-[0_0_0_1px_#ff441f] outline-none transition hover:bg-orange-50 focus:ring-2 focus:ring-[#ff441f]/20 disabled:cursor-not-allowed disabled:border-[#ff441f] disabled:bg-slate-100 disabled:text-slate-500"
+        style={accentStyle}
+        className="absolute inset-0 h-full w-full appearance-none truncate rounded-full border border-[#ff441f] bg-white px-4 py-2 text-center text-base font-semibold text-slate-950 shadow-[0_0_0_1px_#ff441f] outline-none transition focus:ring-2 focus:ring-[#ff441f]/20 disabled:cursor-not-allowed disabled:border-[#ff441f] disabled:bg-slate-100 disabled:text-slate-500"
       >
         {children}
       </select>
@@ -100,6 +133,7 @@ export function MetricAnalysisFormV2({
           value={comparisonCompanyId}
           disabled={isDisabled}
           selectedLabel={comparisonCompanyName}
+          accentColor={getCompanyAccentColor(comparisonCompanyName)}
           onChange={onComparisonCompanyChange}
         >
           {companies.map((company) => (
@@ -115,6 +149,7 @@ export function MetricAnalysisFormV2({
           value={referenceCompanyId}
           disabled={isDisabled}
           selectedLabel={referenceCompanyName}
+          accentColor={getCompanyAccentColor(referenceCompanyName)}
           onChange={onReferenceCompanyChange}
         >
           {companies.map((company) => (
