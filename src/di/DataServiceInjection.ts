@@ -5,7 +5,10 @@ import { SqlMetricAnalyzerRepo } from '../data/MetricAnalyzerRepo'
 import { SqlMetricRepo } from '../data/MetricRepo'
 import { MetricsProvider } from '../data/MetricsProvider'
 import { SqlMetricsProviderRepo } from '../data/MetricsProviderRepo'
-import { ConstantAverageTargetValuesGenerator } from '../db/AverageTargetValuesGenerator'
+import {
+  SeededRandomNumberGenerator,
+  SymmetricRandomAverageTargetValuesGenerator,
+} from '../db/AverageTargetValuesGenerator'
 import { TsvParserAdvantagesInputRowsProvider } from '../db/AdvantagesInputRowsProvider'
 import { AdvantagesInputRowsSeeder } from '../db/AdvantagesInputRowsSeeder'
 import { RappiCompanySeeder } from '../db/RappiCompanySeeder'
@@ -30,7 +33,9 @@ const advantagesInputRowsProvider = new TsvParserAdvantagesInputRowsProvider(
   tsvFileReader.read('advantages'),
   tsvParser,
 )
-const averageTargetValuesGenerator = new ConstantAverageTargetValuesGenerator()
+const randomNumberGenerator = new SeededRandomNumberGenerator(20260510)
+const averageTargetValuesGenerator =
+  new SymmetricRandomAverageTargetValuesGenerator(randomNumberGenerator)
 const advantagesInputRowsSeeder = new AdvantagesInputRowsSeeder(
   [advantagesInputRowsProvider],
   averageTargetValuesGenerator,

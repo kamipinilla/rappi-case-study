@@ -13,6 +13,8 @@ type MetricReference = {
 }
 
 export class AdvantagesInputRowsSeeder {
+  private readonly generatedAverageEpsilon = 0.0001
+
   private readonly targetMeasurementsCount = 9
 
   constructor(
@@ -190,6 +192,17 @@ export class AdvantagesInputRowsSeeder {
       if (!Number.isFinite(targetValue)) {
         throw new Error('Generated Rappi measurement must be finite.')
       }
+    }
+
+    const generatedAverage =
+      targetValues.reduce((sum, targetValue) => sum + targetValue, 0) /
+      targetValues.length
+
+    if (
+      Math.abs(generatedAverage - rappiAverage) >
+      this.generatedAverageEpsilon
+    ) {
+      throw new Error('Generated Rappi measurements average is invalid.')
     }
 
     return targetValues
