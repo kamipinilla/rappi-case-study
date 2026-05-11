@@ -10,7 +10,7 @@ A continuación se presentan los hallazgos más relevantes para el caso de estud
 
 Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competitiva.
 
-## Uber Eats tiene menor tiempo de entrega
+## Zonas donde Uber Eats tiene menor tiempo de entrega que Rappi
 
 | Zona | Diferencia | Uber Eats (min) | Rappi (min) |
 |---|---:|---:|---:|
@@ -18,7 +18,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 | Lomas de Chapultepec | -5.25 | 27.73 | 32.97 |
 | Santa Fe | -5.22 | 30.22 | 35.44 |
 
-## DiDi Food tiene menor tarifa de envío
+## Zonas donde DiDi Food tiene menor tarifa de envío que Rappi
 
 | Zona | Diferencia | DiDi Food (MXN) | Rappi (MXN) |
 |---|---:|---:|---:|
@@ -27,7 +27,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 | Polanco | -2.89 | 15.42 | 18.31 |
 | Roma Norte | -2.72 | 11.85 | 14.57 |
 
-## DiDi Food tiene mayor satisfacción del cliente
+## Zonas donde DiDi Food tiene mayor satisfacción del cliente que Rappi
 
 | Zona | Diferencia | DiDi Food (puntuación) | Rappi (puntuación) |
 |---|---:|---:|---:|
