@@ -16,8 +16,8 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 |---|---:|---:|---:|---:|
 | Condesa | -3.11 | 25.86% | 8.91 | 12.01 |
 | Del Valle | -2.9 | 25.75% | 8.36 | 11.26 |
-| Polanco | -2.89 | 15.80% | 15.42 | 18.32 |
-| Roma Norte | -2.73 | 18.70% | 11.85 | 14.57 |
+| Polanco | -2.89 | 15.79% | 15.42 | 18.31 |
+| Roma Norte | -2.72 | 18.67% | 11.85 | 14.57 |
 
 ## DiDi Food tiene mayor satisfacción del cliente
 
