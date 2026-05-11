@@ -261,29 +261,6 @@ Este debe ser una segunda fase, no el punto de partida.
 
 Este modelo solo debe activarse si hay suficiente rotación por SKU. Si se implementa demasiado pronto, puede aumentar merma y complejidad.
 
-### 5.3 Flujo operativo recomendado
-
-```mermaid
-flowchart TD
-    A[Forecast por zona y franja] --> B[Selección de SKUs y lotes]
-    B --> C[Preparación previa por aliado]
-    C --> D{Tipo de producto}
-    D -->|Eat now| E[Finishing mínimo]
-    D -->|Eat later| F[Refrigeración, sellado y etiquetado]
-    E --> G[Control térmico y empaque]
-    F --> G
-    G --> H[Visibilidad en submenú Turbo Meal Prep]
-    H --> I{Stock, backlog y courier suficientes}
-    I -->|Sí| J[Orden habilitada]
-    I -->|No| K[Ocultar SKU, ampliar ETA o programar]
-    J --> L[Pickup priorizado]
-    L --> M[Entrega]
-    M --> N[CSAT, recompra, reclamos y margen]
-    N --> A
-```
-
----
-
 ## 6. Estrategia para reducir tiempo de entrega
 
 La categoría tiene una ventaja estructural: al no cocinar desde cero, puede reducir el componente más incierto del pedido. Pero esa ventaja solo se captura si el sistema controla preparación, disponibilidad, radio, dispatch y ETA.
