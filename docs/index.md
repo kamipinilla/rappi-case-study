@@ -15,7 +15,8 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 | Zona | Diferencia | DiDi Food | Rappi | Ventaja |
 |---|---:|---:|---:|---:|
 | Condesa | -3.11 | 8.91 | 12.01 | 25.86% |
-| Polanco | -2.98 | 15.42 | 18.4 | 16.20% |
+| Del Valle | -2.92 | 8.36 | 11.27 | 25.86% |
+| Polanco | -2.89 | 15.42 | 18.32 | 15.80% |
 | Roma Norte | -2.73 | 11.85 | 14.57 | 18.70% |
 
 ## DiDi Food tiene mayor satisfacción del cliente
