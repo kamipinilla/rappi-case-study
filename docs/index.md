@@ -15,7 +15,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 | Zona | Diferencia | Ventaja | DiDi Food (MXN) | Rappi (MXN) |
 |---|---:|---:|---:|---:|
 | Condesa | -3.11 | 25.86% | 8.91 | 12.01 |
-| Del Valle | -2.92 | 25.86% | 8.36 | 11.27 |
+| Del Valle | -2.9 | 25.75% | 8.36 | 11.26 |
 | Polanco | -2.89 | 15.80% | 15.42 | 18.32 |
 | Roma Norte | -2.73 | 18.70% | 11.85 | 14.57 |
 
