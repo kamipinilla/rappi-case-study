@@ -300,9 +300,9 @@ Este debe ser una segunda fase, no el punto de partida.
 1. Aliado o cocina compartida prepara lotes.
 2. Stock se transfiere a Turbo hub.
 3. Turbo hace picking y despacho.
-4. Se controla merma, vencimiento y temperatura.
+4. Se controla desperdicio, vencimiento y temperatura.
 
-Este modelo solo debe activarse si hay suficiente rotación por SKU. Si se implementa demasiado pronto, puede aumentar merma y complejidad.
+Este modelo solo debe activarse si hay suficiente rotación por SKU. Si se implementa demasiado pronto, puede aumentar desperdicio y complejidad.
 
 ## 6. Estrategia para reducir tiempo de entrega
 
@@ -673,7 +673,7 @@ Debe existir un score por aliado:
 | SKUs | 6–8 |
 | Mix | 20% eat now, 80% eat later |
 | Aliados | Locales cercanos o cocina compartida |
-| Métrica crítica | Recompra semanal, merma, satisfacción |
+| Métrica crítica | Recompra semanal, desperdicio, satisfacción |
 | Pricing | Packs + Pro Black |
 | Riesgo | Baja densidad y altos costos logísticos |
 
@@ -704,7 +704,7 @@ Este debe ser el último piloto.
 | Asegurar margen | Contribution margin por orden |
 | Validar recurrencia | Órdenes por usuario al mes, attach rate Pro |
 | Controlar calidad | Reclamos, reembolsos, fallas de empaque |
-| Controlar merma | Vencimiento, sell-through por SKU |
+| Controlar desperdicio | Vencimiento, sell-through por SKU |
 
 ### 13.2 Guardrails mínimos
 
@@ -713,7 +713,7 @@ Este debe ser el último piloto.
 | TAT | No lanzar en zonas donde P90 sea inconsistente |
 | CSAT | Meal prep no debe quedar por debajo del promedio de Turbo |
 | Margen | No escalar SKUs con margen negativo estructural |
-| Merma | Retirar SKUs con baja rotación |
+| Desperdicio | Retirar SKUs con baja rotación |
 | Reclamos | Bloquear aliados reincidentes |
 | Precio total | No permitir fee shock en checkout |
 | Recompra | Sin recompra, no hay categoría; solo promo |
@@ -797,7 +797,7 @@ Criterios para avanzar:
 | Demanda | Recompra sostenida y volumen por SKU |
 | Margen | CM positivo sin subsidios excesivos |
 | Calidad | CSAT alto y reclamos bajos |
-| Operación | Merma controlada |
+| Operación | Desperdicio controlado |
 | Densidad | Suficiente volumen por microzona |
 | Aliados | Limitaciones de capacidad o consistencia |
 
@@ -810,7 +810,7 @@ En esta fase sí tiene sentido evaluar cocinas propias, cocinas compartidas, vid
 | Test | Hipótesis | Control | Tratamiento | Métrica primaria | Guardrails |
 |---|---|---|---|---|---|
 | Precio cerrado | Mostrar precio total mejora conversión y reduce quejas por fee | Precio tradicional | Precio total desde listado | Conversión checkout | Margen, AOV |
-| Pack 2 comidas | Bundles diluyen envío y aumentan recurrencia | SKU individual | Pack hoy + mañana | Precio total por comida, recompra D7 | Merma, margen |
+| Pack 2 comidas | Bundles diluyen envío y aumentan recurrencia | SKU individual | Pack hoy + mañana | Precio total por comida, recompra D7 | Desperdicio, margen |
 | ETA dinámica | Promesa menos agresiva pero más confiable sube CSAT | ETA actual | ETA con gating por riesgo | On-time rate, CSAT | Conversión, GMV |
 | Eat later programado | Ventanas bajan costo en periferia | Entrega inmediata | Entrega programada con ahorro | Costo por entrega | CSAT, late rate |
 | Beneficio Pro | Pro aumenta recurrencia sin subsidio universal | Sin beneficio específico | Envío/fee reducido en meal prep | Recompra D30 | Coste de beneficio |
@@ -823,11 +823,11 @@ En esta fase sí tiene sentido evaluar cocinas propias, cocinas compartidas, vid
 | Riesgo | Qué puede salir mal | Mitigación |
 |---|---|---|
 | Sobrepromesa de velocidad | Late orders, comida fría, caída de CSAT | Gating por zona, backlog y disponibilidad |
-| Menú demasiado amplio | Errores, baja rotación, merma | 8–12 SKUs iniciales |
+| Menú demasiado amplio | Errores, baja rotación, desperdicio | 8–12 SKUs iniciales |
 | Precio total no competitivo | Baja conversión o abandono checkout | Precio cerrado, packs, Pro, fee waiver |
 | Subsidios excesivos | Margen negativo no sostenible | Promos segmentadas y con holdout |
 | Baja calidad del aliado | Reclamos, errores, cancelaciones | Scorecard y bloqueo temporal |
-| Merma en eat later | Pérdida de margen | Forecast, sell-through, descuentos de clearance explícitos |
+| Desperdicio en eat later | Pérdida de margen | Forecast, sell-through, descuentos de clearance explícitos |
 | Packaging deficiente | Derrames, frío/calor incorrecto | Estándar obligatorio por carril |
 | Expansión prematura | Complejidad sin demanda | Escalar solo con recompra, margen y CSAT |
 | Periferia mal atendida | Costo alto y experiencia mala | Programación, packs, drops agrupados |
@@ -882,6 +882,6 @@ El éxito no dependerá de tener más platos, sino de cumplir tres condiciones s
 2. **Menor precio total:** SKU value, fee reducido, envío optimizado, packs y Pro.
 3. **Mayor satisfacción:** consistencia, empaque, exactitud, transparencia y recuperación proactiva.
 
-La categoría debe escalar solo cuando demuestre **recompra, margen positivo, bajo reclamo, baja merma y TAT confiable**. Ahí sí tiene sentido evolucionar hacia cocinas compartidas, inventario propio, vida útil mayor y planes de varios días.
+La categoría debe escalar solo cuando demuestre **recompra, margen positivo, bajo reclamo, bajo desperdicio y TAT confiable**. Ahí sí tiene sentido evolucionar hacia cocinas compartidas, inventario propio, vida útil mayor y planes de varios días.
 
 ---
