@@ -58,7 +58,7 @@ La propuesta base debe mantenerse, pero con una precisión importante: **"eat no
 La lógica estratégica se sostiene sobre tres premisas operativas:
 
 - La reducción de tiempo depende de preparación, asignación, densidad, ETA confiable y control de cobertura.
-- El precio total mejora más con envío, fee, bundles, umbrales y promociones segmentadas.
+- El precio total mejora principalmente mediante ajustes en envío, fee, bundles, umbrales y promociones segmentadas.
 - La satisfacción depende principalmente de confiabilidad, exactitud, soporte, recuperación de fallas y claridad del precio.
 
 La categoría debe escalar solo si consigue simultáneamente:
