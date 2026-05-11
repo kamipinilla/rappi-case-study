@@ -8,7 +8,7 @@ A continuación se presentan los hallazgos más relevantes para el caso de estud
 
 ---
 
-# Hallazgos en los datos
+# Análisis comparativo
 
 Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competitiva.
 
