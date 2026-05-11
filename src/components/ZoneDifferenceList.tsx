@@ -52,8 +52,8 @@ export function ZoneDifferenceList({
               <tr
                 key={zone.id}
                 onMouseEnter={() => onZoneSelect(zone.id)}
-                className={`transition hover:bg-orange-50 ${
-                  isSelected ? 'bg-orange-50' : 'bg-white'
+                className={`transition hover:bg-slate-50 ${
+                  isSelected ? 'bg-slate-50' : 'bg-white'
                 }`}
               >
                 <td
