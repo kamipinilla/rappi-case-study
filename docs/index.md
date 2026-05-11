@@ -12,7 +12,7 @@ La estrategia de **meal prep en Turbo** debe tratarse como una nueva categoría 
 
 La propuesta base debe mantenerse, pero con una precisión importante: **“eat now” y “eat later” no deben operar igual en todas las zonas**. En zonas densas y céntricas puede prometerse velocidad tipo Turbo; en zonas periféricas o de baja densidad, la promesa debe moverse hacia ventanas, pedidos programados, packs o cobertura más selectiva.
 
-Esto es consistente con los tres reportes de investigación adjuntos:
+La lógica estratégica se sostiene sobre tres premisas operativas:
 
 - La reducción de tiempo depende de preparación, asignación, densidad, ETA confiable y control de cobertura.
 - El precio total mejora más con envío, fee, bundles, umbrales y promociones segmentadas.
