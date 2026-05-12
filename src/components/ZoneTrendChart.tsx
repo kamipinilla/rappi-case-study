@@ -88,7 +88,7 @@ export function ZoneTrendChart({
   return (
     <section className="flex h-full min-h-[26rem] flex-col gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
       <div className="min-w-0">
-        <h2 className="truncate text-base font-semibold text-slate-950">
+        <h2 className="truncate font-['Nunito'] text-base font-semibold text-slate-950">
           {zone.name}
         </h2>
         <p className="text-sm text-slate-500">Tendencia por semanas</p>
