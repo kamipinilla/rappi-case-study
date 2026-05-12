@@ -65,25 +65,23 @@ export function AnalysisResult({
   }
 
   return (
-    <section className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
-      <div className="grid grid-cols-1 divide-y divide-slate-200 lg:grid-cols-2 lg:divide-x lg:divide-y-0">
-        <ZoneDifferenceList
-          zones={result.zones}
+    <section className="grid grid-cols-1 gap-2 sm:gap-3 lg:grid-cols-2">
+      <ZoneDifferenceList
+        zones={result.zones}
+        referenceCompanyName={referenceCompanyName}
+        comparisonCompanyName={comparisonCompanyName}
+        metricUnitLabel={metricUnitLabel}
+        selectedZoneId={selectedZone?.id ?? null}
+        onZoneSelect={setSelectedZoneId}
+      />
+      {selectedZone ? (
+        <ZoneTrendChart
+          zone={selectedZone}
           referenceCompanyName={referenceCompanyName}
           comparisonCompanyName={comparisonCompanyName}
-          metricUnitLabel={metricUnitLabel}
-          selectedZoneId={selectedZone?.id ?? null}
-          onZoneSelect={setSelectedZoneId}
+          isSatisfactionMetric={isSatisfactionMetric}
         />
-        {selectedZone ? (
-          <ZoneTrendChart
-            zone={selectedZone}
-            referenceCompanyName={referenceCompanyName}
-            comparisonCompanyName={comparisonCompanyName}
-            isSatisfactionMetric={isSatisfactionMetric}
-          />
-        ) : null}
-      </div>
+      ) : null}
     </section>
   )
 }

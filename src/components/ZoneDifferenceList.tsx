@@ -29,62 +29,66 @@ export function ZoneDifferenceList({
     : 'Diferencia'
 
   return (
-    <div className="overflow-x-auto lg:h-full">
-      <table className="min-w-full text-left text-sm">
-        <thead className="border-b border-slate-200 text-xs font-semibold uppercase text-slate-500">
-          <tr>
-            <th scope="col" className="py-2.5 pl-4 pr-3">
-              Zona
-            </th>
-            <th scope="col" className="px-3 py-2.5 text-right">
-              {differenceColumnLabel}
-            </th>
-            <th scope="col" className="px-3 py-2.5 text-right">
-              {comparisonCompanyName}
-            </th>
-            <th scope="col" className="py-2.5 pl-3 pr-4 text-right">
-              {referenceCompanyName}
-            </th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-slate-200">
-          {visibleZones.map((zone) => {
-            const differencePrefix =
-              zone.comparisonData.value >= zone.referenceData.value ? '+' : '-'
-            const isSelected = zone.id === selectedZoneId
+    <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm lg:h-full">
+      <div className="overflow-x-auto">
+        <table className="min-w-full text-left text-sm">
+          <thead className="border-b border-slate-200 text-xs font-semibold uppercase text-slate-500">
+            <tr>
+              <th scope="col" className="py-2.5 pl-4 pr-3">
+                Zona
+              </th>
+              <th scope="col" className="px-3 py-2.5 text-right">
+                {differenceColumnLabel}
+              </th>
+              <th scope="col" className="px-3 py-2.5 text-right">
+                {comparisonCompanyName}
+              </th>
+              <th scope="col" className="py-2.5 pl-3 pr-4 text-right">
+                {referenceCompanyName}
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-200">
+            {visibleZones.map((zone) => {
+              const differencePrefix =
+                zone.comparisonData.value >= zone.referenceData.value
+                  ? '+'
+                  : '-'
+              const isSelected = zone.id === selectedZoneId
 
-            return (
-              <tr
-                key={zone.id}
-                onMouseEnter={() => onZoneSelect(zone.id)}
-                className={`transition hover:bg-slate-50 ${
-                  isSelected ? 'bg-slate-50' : 'bg-white'
-                }`}
-              >
-                <td
-                  className={`py-2.5 pl-4 pr-3 ${
-                    zone.isPrioritized
-                      ? 'font-bold text-[#ff441f]'
-                      : 'font-medium text-slate-800'
+              return (
+                <tr
+                  key={zone.id}
+                  onMouseEnter={() => onZoneSelect(zone.id)}
+                  className={`transition hover:bg-slate-50 ${
+                    isSelected ? 'bg-slate-50' : 'bg-white'
                   }`}
                 >
-                  {zone.name}
-                </td>
-                <td className="px-3 py-2.5 text-right font-semibold text-slate-950">
-                  {differencePrefix}
-                  {differenceFormatter.format(zone.difference)}
-                </td>
-                <td className="px-3 py-2.5 text-right text-slate-700">
-                  {differenceFormatter.format(zone.comparisonData.value)}
-                </td>
-                <td className="py-2.5 pl-3 pr-4 text-right text-slate-700">
-                  {differenceFormatter.format(zone.referenceData.value)}
-                </td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
+                  <td
+                    className={`py-2.5 pl-4 pr-3 ${
+                      zone.isPrioritized
+                        ? 'font-bold text-[#ff441f]'
+                        : 'font-medium text-slate-800'
+                    }`}
+                  >
+                    {zone.name}
+                  </td>
+                  <td className="px-3 py-2.5 text-right font-semibold text-slate-950">
+                    {differencePrefix}
+                    {differenceFormatter.format(zone.difference)}
+                  </td>
+                  <td className="px-3 py-2.5 text-right text-slate-700">
+                    {differenceFormatter.format(zone.comparisonData.value)}
+                  </td>
+                  <td className="py-2.5 pl-3 pr-4 text-right text-slate-700">
+                    {differenceFormatter.format(zone.referenceData.value)}
+                  </td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
