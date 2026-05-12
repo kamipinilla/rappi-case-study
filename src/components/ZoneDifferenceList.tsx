@@ -107,7 +107,7 @@ export function ZoneDifferenceList({
                   ? 'bg-slate-50 hover:bg-slate-100'
                   : 'bg-white hover:bg-slate-50'
               const rowBorderClass = shouldShowLockedBorder
-                ? 'outline outline-2 -outline-offset-2 outline-slate-500'
+                ? 'rounded-md outline outline-2 -outline-offset-2 outline-slate-500'
                 : 'outline outline-0 outline-transparent'
 
               return (
