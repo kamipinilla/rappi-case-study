@@ -123,7 +123,7 @@ export function ZoneTrendChart({
               formatter={(value) => valueFormatter.format(Number(value))}
               labelStyle={{ color: '#0f172a' }}
             />
-            <Legend wrapperStyle={{ fontSize: 12 }} />
+            <Legend wrapperStyle={{ fontSize: 12, fontWeight: 700 }} />
             <ReferenceLine
               y={zone.referenceData.value}
               stroke={referenceCompanyAccentColor}
