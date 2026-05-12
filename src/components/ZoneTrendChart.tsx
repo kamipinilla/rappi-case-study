@@ -35,7 +35,7 @@ const valueFormatter = new Intl.NumberFormat('en-US', {
 
 function formatWeeksAgoLabel(weeksAgo: number): string {
   if (weeksAgo === 0) {
-    return 'Last week'
+    return 'This week'
   }
 
   if (weeksAgo === 1) {
