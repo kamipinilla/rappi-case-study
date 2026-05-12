@@ -100,20 +100,22 @@ export function ZoneDifferenceList({
                   : '-'
               const isSelected = zone.id === selectedZoneId
               const shouldShowSelectionBackground =
-                isSelected && (isSelectionLocked || isCursorOverRows)
+                isSelected && !isSelectionLocked && isCursorOverRows
+              const shouldShowLockedBorder = isSelected && isSelectionLocked
               const rowBackgroundClass =
-                shouldShowSelectionBackground && isSelectionLocked
-                  ? 'bg-slate-200 hover:bg-slate-200'
-                  : shouldShowSelectionBackground
-                    ? 'bg-slate-50 hover:bg-slate-100'
-                    : 'bg-white hover:bg-slate-50'
+                shouldShowSelectionBackground
+                  ? 'bg-slate-50 hover:bg-slate-100'
+                  : 'bg-white hover:bg-slate-50'
+              const rowBorderClass = shouldShowLockedBorder
+                ? 'outline outline-2 -outline-offset-2 outline-slate-500'
+                : 'outline outline-0 outline-transparent'
 
               return (
                 <tr
                   key={zone.id}
                   onMouseEnter={() => handleZoneHover(zone.id)}
                   onClick={() => handleZoneClick(zone.id)}
-                  className={`cursor-pointer transition ${rowBackgroundClass}`}
+                  className={`cursor-pointer transition ${rowBackgroundClass} ${rowBorderClass}`}
                 >
                   <td
                     className={`py-2.5 pl-4 pr-3 ${
