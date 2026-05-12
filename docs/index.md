@@ -14,7 +14,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## Zonas donde Uber Eats tiene menor tiempo de entrega que Rappi
 
-| Zona | Diferencia | Uber Eats (min) | Rappi (min) |
+| Zona | Diferencia (min) | Uber Eats | Rappi |
 |---|---:|---:|---:|
 | Del Valle | -9.46 | 32.86 | 42.32 |
 | Lomas de Chapultepec | -5.25 | 27.73 | 32.97 |
@@ -22,7 +22,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## Zonas donde DiDi Food tiene menor tarifa de envío que Rappi
 
-| Zona | Diferencia | DiDi Food (MXN) | Rappi (MXN) |
+| Zona | Diferencia (MXN) | DiDi Food | Rappi |
 |---|---:|---:|---:|
 | Condesa | -3.11 | 8.91 | 12.01 |
 | Del Valle | -2.9 | 8.36 | 11.26 |
@@ -31,7 +31,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## Zonas donde DiDi Food tiene mayor puntaje de satisfacción que Rappi
 
-| Zona | Diferencia | DiDi Food (puntaje) | Rappi (puntaje) |
+| Zona | Diferencia (pts) | DiDi Food | Rappi |
 |---|---:|---:|---:|
 | Del Valle | +1.2 | 4.54 | 3.35 |
 | Condesa | +1.09 | 4.3 | 3.21 |
