@@ -36,9 +36,15 @@ export function ZoneDifferenceList({
   }, [zones])
 
   const handleZoneHover = (zoneId: string) => {
-    if (!isSelectionLocked) {
-      onZoneSelect(zoneId)
+    if (isSelectionLocked) {
+      if (zoneId === selectedZoneId) {
+        return
+      }
+
+      setIsSelectionLocked(false)
     }
+
+    onZoneSelect(zoneId)
   }
 
   const handleZoneClick = (zoneId: string) => {
@@ -66,10 +72,7 @@ export function ZoneDifferenceList({
               </th>
             </tr>
           </thead>
-          <tbody
-            onMouseEnter={() => setIsSelectionLocked(false)}
-            className="divide-y divide-slate-200"
-          >
+          <tbody className="divide-y divide-slate-200">
             {visibleZones.map((zone) => {
               const differencePrefix =
                 zone.comparisonData.value >= zone.referenceData.value
