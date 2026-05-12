@@ -14,7 +14,7 @@ Solo se muestran las zonas priorizadas dentro de cada grupo de ventaja competiti
 
 ## Zonas donde Uber Eats tiene menor tiempo de entrega que Rappi
 
-| Zona | Diferencia (min) | Uber Eats | Rappi |
+| Zona | Diferencia (mins) | Uber Eats | Rappi |
 |---|---:|---:|---:|
 | Del Valle | -9.46 | 32.86 | 42.32 |
 | Lomas de Chapultepec | -5.25 | 27.73 | 32.97 |

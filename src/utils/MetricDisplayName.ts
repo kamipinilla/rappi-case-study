@@ -10,7 +10,7 @@ const metricDisplayNames: Record<string, string> = {
 }
 
 const metricUnitLabels: Record<string, string> = {
-  'Avg Delivery Time (mins)': 'min',
+  'Avg Delivery Time (mins)': 'mins',
   'Customer Satisfaction Score': 'pts',
   'Delivery Fee (MXN)': 'MXN',
   'Restaurants SST > SS CVR': '%',
