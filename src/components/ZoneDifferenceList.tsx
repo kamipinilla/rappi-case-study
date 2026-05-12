@@ -135,7 +135,7 @@ export function ZoneDifferenceList({
                   <td
                     className={`py-2.5 pl-4 pr-3 ${
                       zone.isPrioritized
-                        ? 'font-bold text-[#ff441f]'
+                        ? 'font-semibold text-[#ff441f]'
                         : 'font-medium text-slate-800'
                     }`}
                   >
