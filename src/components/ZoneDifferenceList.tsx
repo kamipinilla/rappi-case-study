@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import type { Zone } from '../data/MetricAnalyzer'
+import { DEFAULT_ACCENT_COLOR } from '../utils/CompanyAccentColor'
 
 type ZoneDifferenceListProps = {
   zones: Zone[]
@@ -114,8 +115,11 @@ export function ZoneDifferenceList({
                   ? 'bg-slate-50 hover:bg-slate-100'
                   : 'bg-white hover:bg-slate-50'
               const rowBorderClass = shouldShowLockedBorder
-                ? 'rounded-md outline outline-2 -outline-offset-2 outline-slate-500'
+                ? 'rounded-md outline outline-2 -outline-offset-2'
                 : 'outline outline-0 outline-transparent'
+              const rowBorderStyle = shouldShowLockedBorder
+                ? { outlineColor: DEFAULT_ACCENT_COLOR }
+                : undefined
               const regularBorderClass = shouldShowRegularBorder
                 ? 'border-t border-slate-200'
                 : 'border-t border-transparent'
@@ -125,6 +129,7 @@ export function ZoneDifferenceList({
                   key={zone.id}
                   onMouseEnter={() => handleZoneHover(zone.id)}
                   onClick={() => handleZoneClick(zone.id)}
+                  style={rowBorderStyle}
                   className={`cursor-pointer transition ${rowBackgroundClass} ${rowBorderClass} ${regularBorderClass}`}
                 >
                   <td
