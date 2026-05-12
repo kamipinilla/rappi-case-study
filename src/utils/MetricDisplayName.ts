@@ -29,3 +29,7 @@ export function getMetricDisplayNameByName(metricName: string): string {
 export function getMetricUnitLabelByName(metricName: string): string {
   return metricUnitLabels[metricName] ?? ''
 }
+
+export function isSatisfactionMetric(metricName: string): boolean {
+  return metricName === 'Customer Satisfaction Score'
+}

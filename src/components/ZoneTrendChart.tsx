@@ -17,6 +17,7 @@ type ZoneTrendChartProps = {
   zone: Zone
   referenceCompanyName: string
   comparisonCompanyName: string
+  isSatisfactionMetric: boolean
 }
 
 type ChartPoint = {
@@ -63,6 +64,7 @@ export function ZoneTrendChart({
   zone,
   referenceCompanyName,
   comparisonCompanyName,
+  isSatisfactionMetric,
 }: ZoneTrendChartProps) {
   const chartData = mapChartData(zone)
   const referenceCompanyAccentColor =
@@ -99,6 +101,7 @@ export function ZoneTrendChart({
               height={72}
             />
             <YAxis
+              domain={isSatisfactionMetric ? [0, 5] : undefined}
               tick={{ fill: '#64748b', fontSize: 12 }}
               tickFormatter={(value) => valueFormatter.format(Number(value))}
               tickLine={false}

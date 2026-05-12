@@ -11,6 +11,7 @@ type AnalysisResultProps = {
   comparisonCompanyName: string
   metricDisplayName: string
   metricUnitLabel: string
+  isSatisfactionMetric: boolean
 }
 
 export function AnalysisResult({
@@ -20,6 +21,7 @@ export function AnalysisResult({
   comparisonCompanyName,
   metricDisplayName,
   metricUnitLabel,
+  isSatisfactionMetric,
 }: AnalysisResultProps) {
   const [selectedZoneId, setSelectedZoneId] = useState<string | null>(null)
 
@@ -78,6 +80,7 @@ export function AnalysisResult({
             zone={selectedZone}
             referenceCompanyName={referenceCompanyName}
             comparisonCompanyName={comparisonCompanyName}
+            isSatisfactionMetric={isSatisfactionMetric}
           />
         ) : null}
       </div>
