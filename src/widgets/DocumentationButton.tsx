@@ -1,10 +1,19 @@
+import { getCompanyAccentColor } from '../utils/CompanyAccentColor'
+
+const RAPPI_ACCENT_COLOR = getCompanyAccentColor('Rappi')
+
 export function DocumentationButton() {
   return (
     <button
       type="button"
       aria-label="Documentación"
       title="Documentación"
-      className="absolute bottom-5 right-5 top-5 inline-flex aspect-square items-center justify-center rounded-full border border-[#ff441f] bg-white text-[#ff441f] shadow-sm transition hover:bg-[#fff2ee] focus:outline-none focus:ring-2 focus:ring-[#ff441f]/20"
+      style={{
+        borderColor: RAPPI_ACCENT_COLOR,
+        boxShadow: `0 0 0 1px ${RAPPI_ACCENT_COLOR}`,
+        color: RAPPI_ACCENT_COLOR,
+      }}
+      className="absolute bottom-5 right-5 top-5 inline-flex aspect-square items-center justify-center rounded-full border bg-white transition hover:bg-[#fff2ee] focus:outline-none focus:ring-2 focus:ring-[#ff441f]/20"
     >
       <svg
         aria-hidden="true"
