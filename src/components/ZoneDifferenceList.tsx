@@ -28,6 +28,7 @@ export function ZoneDifferenceList({
   const [isSelectionLocked, setIsSelectionLocked] = useState(true)
   const [hasCursorLeftRowsSinceLock, setHasCursorLeftRowsSinceLock] =
     useState(true)
+  const [isCursorOverRows, setIsCursorOverRows] = useState(false)
   const visibleZones = zones.slice(0, MAX_VISIBLE_ZONES)
   const differenceColumnLabel = metricUnitLabel
     ? `Diferencia (${metricUnitLabel})`
@@ -36,9 +37,12 @@ export function ZoneDifferenceList({
   useEffect(() => {
     setIsSelectionLocked(true)
     setHasCursorLeftRowsSinceLock(true)
+    setIsCursorOverRows(false)
   }, [zones])
 
   const handleZoneHover = (zoneId: string) => {
+    setIsCursorOverRows(true)
+
     if (isSelectionLocked) {
       if (zoneId === selectedZoneId || !hasCursorLeftRowsSinceLock) {
         return
@@ -48,6 +52,15 @@ export function ZoneDifferenceList({
     }
 
     onZoneSelect(zoneId)
+  }
+
+  const handleRowsLeave = () => {
+    setHasCursorLeftRowsSinceLock(true)
+    setIsCursorOverRows(false)
+
+    if (!isSelectionLocked && visibleZones[0]) {
+      onZoneSelect(visibleZones[0].id)
+    }
   }
 
   const handleZoneClick = (zoneId: string) => {
@@ -77,7 +90,7 @@ export function ZoneDifferenceList({
             </tr>
           </thead>
           <tbody
-            onMouseLeave={() => setHasCursorLeftRowsSinceLock(true)}
+            onMouseLeave={handleRowsLeave}
             className="divide-y divide-slate-200"
           >
             {visibleZones.map((zone) => {
@@ -86,10 +99,12 @@ export function ZoneDifferenceList({
                   ? '+'
                   : '-'
               const isSelected = zone.id === selectedZoneId
+              const shouldShowSelectionBackground =
+                isSelected && (isSelectionLocked || isCursorOverRows)
               const rowBackgroundClass =
-                isSelected && isSelectionLocked
+                shouldShowSelectionBackground && isSelectionLocked
                   ? 'bg-slate-200 hover:bg-slate-200'
-                  : isSelected
+                  : shouldShowSelectionBackground
                     ? 'bg-slate-50 hover:bg-slate-100'
                     : 'bg-white hover:bg-slate-50'
 
