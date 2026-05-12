@@ -39,15 +39,16 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  *,
-  *::before,
-  *::after {
-    cursor: default !important;
-  }
-
   body {
+    cursor: default;
     min-width: 320px;
     min-height: 100vh;
+  }
+
+  input,
+  textarea,
+  [contenteditable="true"] {
+    cursor: default;
   }
 
   h1,
