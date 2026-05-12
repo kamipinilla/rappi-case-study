@@ -55,7 +55,7 @@ function InlineSelect({
     <span className="relative inline-block min-w-0 max-w-full align-middle">
       <span
         aria-hidden="true"
-        className="block min-h-10 max-w-full overflow-hidden whitespace-pre rounded-full border border-transparent px-4 py-2 text-base font-semibold"
+        className="block min-h-10 max-w-full overflow-hidden whitespace-pre rounded-full border border-transparent px-4 py-2 text-base font-normal"
       >
         {widthLabel}
       </span>
@@ -66,7 +66,7 @@ function InlineSelect({
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
         style={accentStyle}
-        className="absolute inset-0 h-full w-full appearance-none truncate rounded-full border border-[#ff441f] bg-white px-4 py-2 text-center text-base font-semibold text-slate-950 shadow-[0_0_0_1px_#ff441f] outline-none transition focus:ring-2 focus:ring-[#ff441f]/20 disabled:cursor-not-allowed disabled:border-[#ff441f] disabled:bg-slate-100 disabled:text-slate-500"
+        className="absolute inset-0 h-full w-full appearance-none truncate rounded-full border border-[#ff441f] bg-white px-4 py-2 text-center text-base font-normal text-slate-950 shadow-[0_0_0_1px_#ff441f] outline-none transition focus:ring-2 focus:ring-[#ff441f]/20 disabled:cursor-not-allowed disabled:border-[#ff441f] disabled:bg-slate-100 disabled:text-slate-500"
       >
         {children}
       </select>
