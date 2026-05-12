@@ -1,8 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 @import "tailwindcss";
 
 @layer base {
+  @font-face {
+    font-family: "Goldplay-Light";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local("Goldplay-Light"),
+      url("https://images.rappi.com/web/Goldplay/Goldplay-Light.woff2")
+        format("woff2"),
+      url("https://images.rappi.com/web/Goldplay/Goldplay-Light.woff")
+        format("woff");
+  }
+
+  @font-face {
+    font-family: "Goldplay-Bold";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local("Goldplay-Bold"),
+      url("https://images.rappi.com/web/Goldplay/Goldplay-Bold.woff2")
+        format("woff2"),
+      url("https://images.rappi.com/web/Goldplay/Goldplay-Bold.woff")
+        format("woff");
+  }
+
   :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
     color: #172026;
     background-color: #f7f7f2;
     font-synthesis: none;
@@ -14,5 +42,27 @@
   body {
     min-width: 320px;
     min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Goldplay-Light", "Nunito", system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  strong,
+  b {
+    font-family: "Goldplay-Bold", "Nunito", system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  button,
+  input,
+  select,
+  textarea,
+  .recharts-wrapper,
+  .recharts-text {
+    font-family: inherit;
   }
 }
