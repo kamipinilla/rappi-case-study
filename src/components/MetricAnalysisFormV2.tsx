@@ -10,6 +10,7 @@ import {
   getMetricDisplayName,
   getMetricDisplayNameByName,
 } from '../utils/MetricDisplayName'
+import { DocumentationButton } from '../widgets/DocumentationButton'
 
 type MetricAnalysisFormV2Props = {
   companies: Company[]
@@ -94,8 +95,9 @@ export function MetricAnalysisFormV2({
   const metricDisplayName = getMetricDisplayNameByName(metricName)
 
   return (
-    <div className="flex w-full min-w-0 flex-col gap-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-      <div className="flex min-w-0 flex-wrap items-center justify-center gap-x-2 gap-y-3 text-center text-lg font-medium leading-[2.75rem] text-slate-950">
+    <div className="relative flex w-full min-w-0 flex-col gap-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+      <DocumentationButton />
+      <div className="flex min-w-0 flex-wrap items-center justify-center gap-x-2 gap-y-3 px-12 text-center text-lg font-medium leading-[2.75rem] text-slate-950">
         <span>¿En cuáles zonas tiene</span>
         <InlineSelect
           id="comparison-company"
