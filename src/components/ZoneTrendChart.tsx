@@ -98,7 +98,7 @@ export function ZoneTrendChart({
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={chartData}
-            margin={{ top: 8, right: 80, bottom: 56, left: 8 }}
+            margin={{ top: 8, right: 48, bottom: 56, left: 8 }}
           >
             <CartesianGrid stroke="#e2e8f0" strokeDasharray="4 4" />
             <XAxis
@@ -109,7 +109,7 @@ export function ZoneTrendChart({
               textAnchor="end"
               tick={{ fill: '#64748b', fontSize: 12 }}
               tickLine={false}
-              padding={{ left: 28, right: 72 }}
+              padding={{ left: 28, right: 48 }}
               height={72}
             />
             <YAxis
