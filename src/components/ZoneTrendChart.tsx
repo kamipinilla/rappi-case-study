@@ -33,6 +33,18 @@ const valueFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 2,
 })
 
+function formatWeeksAgoLabel(weeksAgo: number): string {
+  if (weeksAgo === 0) {
+    return 'Last week'
+  }
+
+  if (weeksAgo === 1) {
+    return '1 week ago'
+  }
+
+  return `${weeksAgo} weeks ago`
+}
+
 function getMeasurementValueByWeek(
   measurements: Measurement[],
 ): Map<number, number> {
@@ -54,7 +66,7 @@ function mapChartData(zone: Zone): ChartPoint[] {
 
   return weeksAgoLabels.map((weeksAgo) => ({
     weeksAgo,
-    label: `${weeksAgo} weeks ago`,
+    label: formatWeeksAgoLabel(weeksAgo),
     referenceValue: referenceMeasurements.get(weeksAgo) ?? null,
     comparisonValue: comparisonMeasurements.get(weeksAgo) ?? null,
   }))
