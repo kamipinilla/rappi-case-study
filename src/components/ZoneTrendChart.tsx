@@ -125,6 +125,7 @@ export function ZoneTrendChart({
               formatter={(value) => valueFormatter.format(Number(value))}
               labelFormatter={formatWeeksAgoLabel}
               labelStyle={{ color: '#0f172a' }}
+              separator=": "
             />
             <Legend wrapperStyle={{ fontSize: 12, fontWeight: 700 }} />
             <ReferenceLine
