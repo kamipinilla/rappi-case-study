@@ -101,6 +101,7 @@ export function ZoneTrendChart({
             />
             <YAxis
               domain={isSatisfactionMetric ? [0, 5] : undefined}
+              ticks={isSatisfactionMetric ? [0, 1, 2, 3, 4, 5] : undefined}
               tick={{ fill: '#64748b', fontSize: 12 }}
               tickFormatter={(value) => valueFormatter.format(Number(value))}
               tickLine={false}
