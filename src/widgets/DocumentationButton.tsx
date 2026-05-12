@@ -4,8 +4,10 @@ const RAPPI_ACCENT_COLOR = getCompanyAccentColor('Rappi')
 
 export function DocumentationButton() {
   return (
-    <button
-      type="button"
+    <a
+      href="https://docs.rappi-case-study.com"
+      target="_blank"
+      rel="noreferrer"
       aria-label="Documentación"
       style={{
         borderColor: RAPPI_ACCENT_COLOR,
@@ -34,6 +36,6 @@ export function DocumentationButton() {
           strokeLinejoin="round"
         />
       </svg>
-    </button>
+    </a>
   )
 }
