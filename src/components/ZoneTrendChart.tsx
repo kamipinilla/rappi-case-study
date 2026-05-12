@@ -33,6 +33,20 @@ const valueFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 2,
 })
 
+function formatWeeksAgoLabel(label: unknown): string {
+  const weeksAgo = Number(label)
+
+  if (!Number.isFinite(weeksAgo)) {
+    return String(label)
+  }
+
+  if (weeksAgo === 0) {
+    return 'Esta semana'
+  }
+
+  return `Hace ${weeksAgo} semana${weeksAgo === 1 ? '' : 's'}`
+}
+
 function getMeasurementValueByWeek(
   measurements: Measurement[],
 ): Map<number, number> {
@@ -109,6 +123,7 @@ export function ZoneTrendChart({
             />
             <Tooltip
               formatter={(value) => valueFormatter.format(Number(value))}
+              labelFormatter={formatWeeksAgoLabel}
               labelStyle={{ color: '#0f172a' }}
             />
             <Legend wrapperStyle={{ fontSize: 12, fontWeight: 700 }} />
