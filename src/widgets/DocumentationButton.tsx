@@ -13,7 +13,7 @@ export function DocumentationButton() {
         boxShadow: `0 0 0 1px ${RAPPI_ACCENT_COLOR}`,
         color: RAPPI_ACCENT_COLOR,
       }}
-      className="absolute bottom-5 right-5 top-5 inline-flex aspect-square cursor-pointer items-center justify-center rounded-full border bg-white transition hover:bg-[#fff2ee] focus:outline-none focus:ring-2 focus:ring-[#ff441f]/20"
+      className="absolute bottom-5 right-5 top-5 inline-flex aspect-square cursor-pointer items-center justify-center rounded-full border bg-white focus:outline-none focus:ring-2 focus:ring-[#ff441f]/20"
     >
       <svg
         aria-hidden="true"
