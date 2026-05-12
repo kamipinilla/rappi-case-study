@@ -25,14 +25,14 @@ export function ZoneDifferenceList({
   selectedZoneId,
   onZoneSelect,
 }: ZoneDifferenceListProps) {
-  const [isSelectionLocked, setIsSelectionLocked] = useState(false)
+  const [isSelectionLocked, setIsSelectionLocked] = useState(true)
   const visibleZones = zones.slice(0, MAX_VISIBLE_ZONES)
   const differenceColumnLabel = metricUnitLabel
     ? `Diferencia (${metricUnitLabel})`
     : 'Diferencia'
 
   useEffect(() => {
-    setIsSelectionLocked(false)
+    setIsSelectionLocked(true)
   }, [zones])
 
   const handleZoneHover = (zoneId: string) => {
@@ -49,10 +49,7 @@ export function ZoneDifferenceList({
   return (
     <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm lg:h-full">
       <div className="overflow-x-auto">
-        <table
-          onMouseEnter={() => setIsSelectionLocked(false)}
-          className="min-w-full text-left text-sm"
-        >
+        <table className="min-w-full text-left text-sm">
           <thead className="border-b border-slate-200 text-xs font-semibold uppercase text-slate-500">
             <tr>
               <th scope="col" className="py-2.5 pl-4 pr-3">
@@ -69,7 +66,10 @@ export function ZoneDifferenceList({
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-200">
+          <tbody
+            onMouseEnter={() => setIsSelectionLocked(false)}
+            className="divide-y divide-slate-200"
+          >
             {visibleZones.map((zone) => {
               const differencePrefix =
                 zone.comparisonData.value >= zone.referenceData.value
