@@ -33,18 +33,6 @@ const valueFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 2,
 })
 
-function formatWeeksAgoLabel(weeksAgo: number): string {
-  if (weeksAgo === 0) {
-    return 'This week'
-  }
-
-  if (weeksAgo === 1) {
-    return '1 week ago'
-  }
-
-  return `${weeksAgo} weeks ago`
-}
-
 function getMeasurementValueByWeek(
   measurements: Measurement[],
 ): Map<number, number> {
@@ -66,7 +54,7 @@ function mapChartData(zone: Zone): ChartPoint[] {
 
   return weeksAgoLabels.map((weeksAgo) => ({
     weeksAgo,
-    label: formatWeeksAgoLabel(weeksAgo),
+    label: String(weeksAgo),
     referenceValue: referenceMeasurements.get(weeksAgo) ?? null,
     comparisonValue: comparisonMeasurements.get(weeksAgo) ?? null,
   }))
@@ -98,19 +86,18 @@ export function ZoneTrendChart({
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={chartData}
-            margin={{ top: 8, right: 48, bottom: 56, left: 8 }}
+            margin={{ top: 8, right: 48, bottom: 16, left: 8 }}
           >
             <CartesianGrid stroke="#e2e8f0" strokeDasharray="4 4" />
             <XAxis
               dataKey="label"
               interval={0}
               minTickGap={0}
-              angle={-35}
-              textAnchor="end"
+              textAnchor="middle"
               tick={{ fill: '#64748b', fontSize: 12 }}
               tickLine={false}
               padding={{ left: 28, right: 48 }}
-              height={72}
+              height={32}
             />
             <YAxis
               domain={isSatisfactionMetric ? [0, 5] : undefined}
