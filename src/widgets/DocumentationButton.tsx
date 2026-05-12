@@ -7,7 +7,6 @@ export function DocumentationButton() {
     <button
       type="button"
       aria-label="Documentación"
-      title="Documentación"
       style={{
         borderColor: RAPPI_ACCENT_COLOR,
         boxShadow: `0 0 0 1px ${RAPPI_ACCENT_COLOR}`,
