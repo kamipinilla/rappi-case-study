@@ -26,6 +26,8 @@ export function ZoneDifferenceList({
   onZoneSelect,
 }: ZoneDifferenceListProps) {
   const [isSelectionLocked, setIsSelectionLocked] = useState(true)
+  const [hasCursorLeftRowsSinceLock, setHasCursorLeftRowsSinceLock] =
+    useState(true)
   const visibleZones = zones.slice(0, MAX_VISIBLE_ZONES)
   const differenceColumnLabel = metricUnitLabel
     ? `Diferencia (${metricUnitLabel})`
@@ -33,11 +35,12 @@ export function ZoneDifferenceList({
 
   useEffect(() => {
     setIsSelectionLocked(true)
+    setHasCursorLeftRowsSinceLock(true)
   }, [zones])
 
   const handleZoneHover = (zoneId: string) => {
     if (isSelectionLocked) {
-      if (zoneId === selectedZoneId) {
+      if (zoneId === selectedZoneId || !hasCursorLeftRowsSinceLock) {
         return
       }
 
@@ -50,6 +53,7 @@ export function ZoneDifferenceList({
   const handleZoneClick = (zoneId: string) => {
     onZoneSelect(zoneId)
     setIsSelectionLocked(true)
+    setHasCursorLeftRowsSinceLock(false)
   }
 
   return (
@@ -72,7 +76,10 @@ export function ZoneDifferenceList({
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-200">
+          <tbody
+            onMouseLeave={() => setHasCursorLeftRowsSinceLock(true)}
+            className="divide-y divide-slate-200"
+          >
             {visibleZones.map((zone) => {
               const differencePrefix =
                 zone.comparisonData.value >= zone.referenceData.value
