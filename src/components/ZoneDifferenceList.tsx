@@ -4,6 +4,7 @@ type ZoneDifferenceListProps = {
   zones: Zone[]
   referenceCompanyName: string
   comparisonCompanyName: string
+  metricUnitLabel: string
   selectedZoneId: string | null
   onZoneSelect: (zoneId: string) => void
 }
@@ -18,10 +19,14 @@ export function ZoneDifferenceList({
   zones,
   referenceCompanyName,
   comparisonCompanyName,
+  metricUnitLabel,
   selectedZoneId,
   onZoneSelect,
 }: ZoneDifferenceListProps) {
   const visibleZones = zones.slice(0, MAX_VISIBLE_ZONES)
+  const differenceColumnLabel = metricUnitLabel
+    ? `Diferencia (${metricUnitLabel})`
+    : 'Diferencia'
 
   return (
     <div className="overflow-x-auto lg:h-full">
@@ -32,7 +37,7 @@ export function ZoneDifferenceList({
               Zona
             </th>
             <th scope="col" className="px-3 py-2.5 text-right">
-              Diferencia
+              {differenceColumnLabel}
             </th>
             <th scope="col" className="px-3 py-2.5 text-right">
               {comparisonCompanyName}

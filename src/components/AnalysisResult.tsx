@@ -10,6 +10,7 @@ type AnalysisResultProps = {
   referenceCompanyName: string
   comparisonCompanyName: string
   metricDisplayName: string
+  metricUnitLabel: string
 }
 
 export function AnalysisResult({
@@ -18,6 +19,7 @@ export function AnalysisResult({
   referenceCompanyName,
   comparisonCompanyName,
   metricDisplayName,
+  metricUnitLabel,
 }: AnalysisResultProps) {
   const [selectedZoneId, setSelectedZoneId] = useState<string | null>(null)
 
@@ -67,6 +69,7 @@ export function AnalysisResult({
           zones={result.zones}
           referenceCompanyName={referenceCompanyName}
           comparisonCompanyName={comparisonCompanyName}
+          metricUnitLabel={metricUnitLabel}
           selectedZoneId={selectedZone?.id ?? null}
           onZoneSelect={setSelectedZoneId}
         />

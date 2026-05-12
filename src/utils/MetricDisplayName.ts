@@ -9,10 +9,23 @@ const metricDisplayNames: Record<string, string> = {
   'Service Fee (%)': 'tarifa de servicio',
 }
 
+const metricUnitLabels: Record<string, string> = {
+  'Avg Delivery Time (mins)': 'min',
+  'Customer Satisfaction Score': 'pts',
+  'Delivery Fee (MXN)': 'MXN',
+  'Restaurants SST > SS CVR': '%',
+  'Retail SST > SS CVR': '%',
+  'Service Fee (%)': '%',
+}
+
 export function getMetricDisplayName(metric: Metric): string {
   return metricDisplayNames[metric.name] ?? metric.name
 }
 
 export function getMetricDisplayNameByName(metricName: string): string {
   return metricDisplayNames[metricName] ?? metricName
+}
+
+export function getMetricUnitLabelByName(metricName: string): string {
+  return metricUnitLabels[metricName] ?? ''
 }

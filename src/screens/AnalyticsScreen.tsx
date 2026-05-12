@@ -7,7 +7,10 @@ import type { Response as MetricAnalysisResponse } from '../data/MetricAnalyzer'
 import type { Metric } from '../data/MetricRepo'
 import { AnalysisResult } from '../components/AnalysisResult'
 import { MetricAnalysisFormV2 } from '../components/MetricAnalysisFormV2'
-import { getMetricDisplayNameByName } from '../utils/MetricDisplayName'
+import {
+  getMetricDisplayNameByName,
+  getMetricUnitLabelByName,
+} from '../utils/MetricDisplayName'
 
 type AnalyticsScreenProps = {
   dataService?: DataService
@@ -161,6 +164,7 @@ export function AnalyticsScreen({
     companies.find((company) => company.id === comparisonCompanyId)?.name ?? ''
   const metricName = metrics.find((metric) => metric.id === metricId)?.name ?? ''
   const metricDisplayName = getMetricDisplayNameByName(metricName)
+  const metricUnitLabel = getMetricUnitLabelByName(metricName)
 
   return (
     <main className="min-h-screen bg-slate-50 px-2 py-2 text-slate-950 sm:px-3 sm:py-3">
@@ -198,6 +202,7 @@ export function AnalyticsScreen({
             referenceCompanyName={referenceCompanyName}
             comparisonCompanyName={comparisonCompanyName}
             metricDisplayName={metricDisplayName}
+            metricUnitLabel={metricUnitLabel}
           />
         )}
       </div>
