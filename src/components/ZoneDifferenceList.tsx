@@ -50,7 +50,7 @@ export function ZoneDifferenceList({
     <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm lg:h-full">
       <div className="overflow-x-auto">
         <table
-          onMouseLeave={() => setIsSelectionLocked(false)}
+          onMouseEnter={() => setIsSelectionLocked(false)}
           className="min-w-full text-left text-sm"
         >
           <thead className="border-b border-slate-200 text-xs font-semibold uppercase text-slate-500">
@@ -76,15 +76,19 @@ export function ZoneDifferenceList({
                   ? '+'
                   : '-'
               const isSelected = zone.id === selectedZoneId
+              const rowBackgroundClass =
+                isSelected && isSelectionLocked
+                  ? 'bg-slate-200 hover:bg-slate-200'
+                  : isSelected
+                    ? 'bg-slate-50 hover:bg-slate-100'
+                    : 'bg-white hover:bg-slate-50'
 
               return (
                 <tr
                   key={zone.id}
                   onMouseEnter={() => handleZoneHover(zone.id)}
                   onClick={() => handleZoneClick(zone.id)}
-                  className={`cursor-pointer transition hover:bg-slate-50 ${
-                    isSelected ? 'bg-slate-50' : 'bg-white'
-                  }`}
+                  className={`cursor-pointer transition ${rowBackgroundClass}`}
                 >
                   <td
                     className={`py-2.5 pl-4 pr-3 ${
