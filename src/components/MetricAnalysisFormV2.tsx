@@ -66,7 +66,7 @@ function InlineSelect({
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
         style={accentStyle}
-        className="absolute inset-0 h-full w-full appearance-none truncate rounded-full border border-[#ff441f] bg-white px-4 py-2 text-center text-base font-normal text-slate-950 shadow-[0_0_0_1px_#ff441f] outline-none transition focus:ring-2 focus:ring-[#ff441f]/20 disabled:cursor-not-allowed disabled:border-[#ff441f] disabled:bg-slate-100 disabled:text-slate-500"
+        className="absolute inset-0 h-full w-full cursor-pointer appearance-none truncate rounded-full border border-[#ff441f] bg-white px-4 py-2 text-center text-base font-normal text-slate-950 shadow-[0_0_0_1px_#ff441f] outline-none transition focus:ring-2 focus:ring-[#ff441f]/20 disabled:cursor-not-allowed disabled:border-[#ff441f] disabled:bg-slate-100 disabled:text-slate-500"
       >
         {children}
       </select>
