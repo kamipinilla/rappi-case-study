@@ -6,6 +6,10 @@ import {
   DEFAULT_ACCENT_COLOR,
   getCompanyAccentColor,
 } from '../utils/CompanyAccentColor'
+import {
+  getMetricDisplayName,
+  getMetricDisplayNameByName,
+} from '../utils/MetricDisplayName'
 
 type MetricAnalysisFormV2Props = {
   companies: Company[]
@@ -28,19 +32,6 @@ type InlineSelectProps = {
   accentColor?: string
   children: ReactNode
   onChange: (value: string) => void
-}
-
-const metricDisplayNames: Record<string, string> = {
-  'Avg Delivery Time (mins)': 'tiempo de entrega',
-  'Customer Satisfaction Score': 'puntaje de satisfacción',
-  'Delivery Fee (MXN)': 'tarifa de envío',
-  'Restaurants SST > SS CVR': 'conversión en restaurantes',
-  'Retail SST > SS CVR': 'conversión en retail',
-  'Service Fee (%)': 'tarifa de servicio',
-}
-
-function getMetricDisplayName(metric: Metric): string {
-  return metricDisplayNames[metric.name] ?? metric.name
 }
 
 function InlineSelect({
@@ -100,7 +91,7 @@ export function MetricAnalysisFormV2({
     companies.find((company) => company.id === comparisonCompanyId)?.name ?? ''
   const metricName =
     metrics.find((metric) => metric.id === metricId)?.name ?? ''
-  const metricDisplayName = metricDisplayNames[metricName] ?? metricName
+  const metricDisplayName = getMetricDisplayNameByName(metricName)
 
   return (
     <div className="flex w-full min-w-0 flex-col gap-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">

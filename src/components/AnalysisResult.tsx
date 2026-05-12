@@ -9,6 +9,7 @@ type AnalysisResultProps = {
   error: string | null
   referenceCompanyName: string
   comparisonCompanyName: string
+  metricDisplayName: string
 }
 
 export function AnalysisResult({
@@ -16,6 +17,7 @@ export function AnalysisResult({
   error,
   referenceCompanyName,
   comparisonCompanyName,
+  metricDisplayName,
 }: AnalysisResultProps) {
   const [selectedZoneId, setSelectedZoneId] = useState<string | null>(null)
 
@@ -51,7 +53,8 @@ export function AnalysisResult({
     return (
       <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
         <p className="text-sm text-slate-600">
-          No hay zonas con diferencia para esta comparación.
+          No hay zonas en esta base de datos donde {comparisonCompanyName} tenga
+          mejor {metricDisplayName} que {referenceCompanyName}.
         </p>
       </section>
     )
