@@ -108,7 +108,9 @@ export function ZoneDifferenceList({
               const shouldShowRegularBorder =
                 index > 0 && !shouldShowLockedBorder && !isPreviousZoneLocked
               const rowBackgroundClass =
-                shouldShowSelectionBackground
+                shouldShowLockedBorder
+                  ? 'bg-white hover:bg-white'
+                  : shouldShowSelectionBackground
                   ? 'bg-slate-50 hover:bg-slate-100'
                   : 'bg-white hover:bg-slate-50'
               const rowBorderClass = shouldShowLockedBorder
