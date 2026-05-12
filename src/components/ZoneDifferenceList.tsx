@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 import type { Zone } from '../data/MetricAnalyzer'
 
 type ZoneDifferenceListProps = {
@@ -23,15 +25,34 @@ export function ZoneDifferenceList({
   selectedZoneId,
   onZoneSelect,
 }: ZoneDifferenceListProps) {
+  const [isSelectionLocked, setIsSelectionLocked] = useState(false)
   const visibleZones = zones.slice(0, MAX_VISIBLE_ZONES)
   const differenceColumnLabel = metricUnitLabel
     ? `Diferencia (${metricUnitLabel})`
     : 'Diferencia'
 
+  useEffect(() => {
+    setIsSelectionLocked(false)
+  }, [zones])
+
+  const handleZoneHover = (zoneId: string) => {
+    if (!isSelectionLocked) {
+      onZoneSelect(zoneId)
+    }
+  }
+
+  const handleZoneClick = (zoneId: string) => {
+    onZoneSelect(zoneId)
+    setIsSelectionLocked(true)
+  }
+
   return (
     <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm lg:h-full">
       <div className="overflow-x-auto">
-        <table className="min-w-full text-left text-sm">
+        <table
+          onMouseLeave={() => setIsSelectionLocked(false)}
+          className="min-w-full text-left text-sm"
+        >
           <thead className="border-b border-slate-200 text-xs font-semibold uppercase text-slate-500">
             <tr>
               <th scope="col" className="py-2.5 pl-4 pr-3">
@@ -59,8 +80,9 @@ export function ZoneDifferenceList({
               return (
                 <tr
                   key={zone.id}
-                  onMouseEnter={() => onZoneSelect(zone.id)}
-                  className={`transition hover:bg-slate-50 ${
+                  onMouseEnter={() => handleZoneHover(zone.id)}
+                  onClick={() => handleZoneClick(zone.id)}
+                  className={`cursor-pointer transition hover:bg-slate-50 ${
                     isSelected ? 'bg-slate-50' : 'bg-white'
                   }`}
                 >
