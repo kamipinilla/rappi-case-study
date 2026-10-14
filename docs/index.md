@@ -4,7 +4,7 @@ title: Rappi Case Study Docs
 
 # Introducción
 
-Para el caso de estudio se desarrolló una herramienta web para hacer análisis de ventaja competitiva. La aplicación principal, que contiene el dashboard interactivo, se encuentra disponible en [rappi-case-study.com](https://www.rappi-case-study.com). El código de la aplicación está disponible en este [repositorio](https://github.com/kamipinilla/rappi-case-study).
+Para el caso de estudio se desarrolló una herramienta web para hacer análisis de ventaja competitiva. La aplicación principal, que contiene el dashboard interactivo, se encuentra disponible [aquí](https://rappi-case-study-production.up.railway.app/).
 
 La base de datos fue poblada directamente del archivo [COMPETITORS_DATA](https://docs.google.com/spreadsheets/d/1-FolE32bidoXzmmW977H-hE3mfbnB72ZbOgfv_VT7zw/edit?usp=drive_link). Para completar el análisis comparativo, se agregaron valores simulados para las métricas faltantes de Rappi.
 
